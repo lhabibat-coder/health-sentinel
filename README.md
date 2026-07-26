@@ -1,23 +1,32 @@
-# 🛡 Health Sentinel
+# React + TypeScript + Vite
 
-**Evidence. Insight. Action.**
+This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
 
-Health Sentinel is an AI-assisted Public Health Intelligence Platform designed to help governments, NGOs, researchers, and public health professionals monitor emerging health risks, identify misinformation, detect knowledge gaps, and generate evidence-informed recommendations.
+Currently, two official plugins are available:
 
----
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
 
-## Vision
+## React Compiler
 
-Transform public health intelligence from passive reporting into proactive decision support.
+The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
 
----
+## Expanding the Oxlint configuration
 
-## Core Features
+If you are developing a production application, we recommend enabling type-aware lint rules by installing `oxlint-tsgolint` and editing `.oxlintrc.json`:
 
-- AI Morning Brief
-- Health Intelligence Dashboard
-- Knowledge Gap Detection
-- Misinformation Surveillance
-- Research Library
-- Policy Library
-- Executive Reports
+```json
+{
+  "$schema": "./node_modules/oxlint/configuration_schema.json",
+  "plugins": ["react", "typescript", "oxc"],
+  "options": {
+    "typeAware": true
+  },
+  "rules": {
+    "react/rules-of-hooks": "error",
+    "react/only-export-components": ["warn", { "allowConstantExport": true }]
+  }
+}
+```
+
+See the [Oxlint rules documentation](https://oxc.rs/docs/guide/usage/linter/rules) for the full list of rules and categories.

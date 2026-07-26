@@ -1,0 +1,475 @@
+======== Resolving module 'react/jsx-runtime' from 'C:/Users/HabibatLawal/OneDrive - Health Watch Foundation/Documents/GitHub/health-sentinel/src/App.tsx'. ========
+Explicitly specified module resolution kind: 'Bundler'.
+Resolving in CJS mode with conditions 'import', 'types'.
+File 'C:/Users/HabibatLawal/OneDrive - Health Watch Foundation/Documents/GitHub/health-sentinel/src/package.json' does not exist.
+Found 'package.json' at 'C:/Users/HabibatLawal/OneDrive - Health Watch Foundation/Documents/GitHub/health-sentinel/package.json'.
+Loading module 'react/jsx-runtime' from 'node_modules' folder, target file types: TypeScript, JavaScript, Declaration, JSON.
+Searching all ancestor node_modules directories for preferred extensions: TypeScript, Declaration.
+Directory 'C:/Users/HabibatLawal/OneDrive - Health Watch Foundation/Documents/GitHub/health-sentinel/src/node_modules' does not exist, skipping all lookups in it.
+Found 'package.json' at 'C:/Users/HabibatLawal/OneDrive - Health Watch Foundation/Documents/GitHub/health-sentinel/node_modules/react/package.json'.
+Entering conditional exports.
+Saw non-matching condition 'react-server'.
+Matched 'exports' condition 'default'.
+Using 'exports' subpath './jsx-runtime' with target './jsx-runtime.js'.
+File name 'C:/Users/HabibatLawal/OneDrive - Health Watch Foundation/Documents/GitHub/health-sentinel/node_modules/react/jsx-runtime.js' has a '.js' extension - stripping it.
+File 'C:/Users/HabibatLawal/OneDrive - Health Watch Foundation/Documents/GitHub/health-sentinel/node_modules/react/jsx-runtime.ts' does not exist.
+File 'C:/Users/HabibatLawal/OneDrive - Health Watch Foundation/Documents/GitHub/health-sentinel/node_modules/react/jsx-runtime.tsx' does not exist.
+File 'C:/Users/HabibatLawal/OneDrive - Health Watch Foundation/Documents/GitHub/health-sentinel/node_modules/react/jsx-runtime.d.ts' does not exist.
+Failed to resolve under condition 'default'.
+Exiting conditional exports.
+Export specifier './jsx-runtime' does not exist in package.json scope at path 'C:/Users/HabibatLawal/OneDrive - Health Watch Foundation/Documents/GitHub/health-sentinel/node_modules/react'.
+Found 'package.json' at 'C:/Users/HabibatLawal/OneDrive - Health Watch Foundation/Documents/GitHub/health-sentinel/node_modules/@types/react/package.json'.
+Entering conditional exports.
+Saw non-matching condition 'types@<=5.0'.
+Matched 'exports' condition 'types'.
+Entering conditional exports.
+Matched 'exports' condition 'default'.
+Using 'exports' subpath './jsx-runtime' with target './jsx-runtime.d.ts'.
+File 'C:/Users/HabibatLawal/OneDrive - Health Watch Foundation/Documents/GitHub/health-sentinel/node_modules/@types/react/jsx-runtime.d.ts' exists - use it as a name resolution result.
+'package.json' has a 'peerDependencies' field.
+Resolving real path for 'C:/Users/HabibatLawal/OneDrive - Health Watch Foundation/Documents/GitHub/health-sentinel/node_modules/@types/react', result 'C:/Users/HabibatLawal/OneDrive - Health Watch Foundation/Documents/GitHub/health-sentinel/node_modules/@types/react'.
+Resolved under condition 'default'.
+Exiting conditional exports.
+Resolved under condition 'types'.
+Exiting conditional exports.
+Resolving real path for 'C:/Users/HabibatLawal/OneDrive - Health Watch Foundation/Documents/GitHub/health-sentinel/node_modules/@types/react/jsx-runtime.d.ts', result 'C:/Users/HabibatLawal/OneDrive - Health Watch Foundation/Documents/GitHub/health-sentinel/node_modules/@types/react/jsx-runtime.d.ts'.
+======== Module name 'react/jsx-runtime' was successfully resolved to 'C:/Users/HabibatLawal/OneDrive - Health Watch Foundation/Documents/GitHub/health-sentinel/node_modules/@types/react/jsx-runtime.d.ts' with Package ID '@types/react/jsx-runtime.d.ts@19.2.17'. ========
+======== Resolving module './components/layout/Header' from 'C:/Users/HabibatLawal/OneDrive - Health Watch Foundation/Documents/GitHub/health-sentinel/src/App.tsx'. ========
+Explicitly specified module resolution kind: 'Bundler'.
+Resolving in CJS mode with conditions 'import', 'types'.
+Loading module as file / folder, candidate module location 'C:/Users/HabibatLawal/OneDrive - Health Watch Foundation/Documents/GitHub/health-sentinel/src/components/layout/Header', target file types: TypeScript, JavaScript, Declaration, JSON.
+File 'C:/Users/HabibatLawal/OneDrive - Health Watch Foundation/Documents/GitHub/health-sentinel/src/components/layout/Header.ts' does not exist.
+File 'C:/Users/HabibatLawal/OneDrive - Health Watch Foundation/Documents/GitHub/health-sentinel/src/components/layout/Header.tsx' exists - use it as a name resolution result.
+======== Module name './components/layout/Header' was successfully resolved to 'C:/Users/HabibatLawal/OneDrive - Health Watch Foundation/Documents/GitHub/health-sentinel/src/components/layout/Header.tsx'. ========
+======== Resolving module './components/layout/Sidebar' from 'C:/Users/HabibatLawal/OneDrive - Health Watch Foundation/Documents/GitHub/health-sentinel/src/App.tsx'. ========
+Explicitly specified module resolution kind: 'Bundler'.
+Resolving in CJS mode with conditions 'import', 'types'.
+Loading module as file / folder, candidate module location 'C:/Users/HabibatLawal/OneDrive - Health Watch Foundation/Documents/GitHub/health-sentinel/src/components/layout/Sidebar', target file types: TypeScript, JavaScript, Declaration, JSON.
+File 'C:/Users/HabibatLawal/OneDrive - Health Watch Foundation/Documents/GitHub/health-sentinel/src/components/layout/Sidebar.ts' does not exist.
+File 'C:/Users/HabibatLawal/OneDrive - Health Watch Foundation/Documents/GitHub/health-sentinel/src/components/layout/Sidebar.tsx' exists - use it as a name resolution result.
+======== Module name './components/layout/Sidebar' was successfully resolved to 'C:/Users/HabibatLawal/OneDrive - Health Watch Foundation/Documents/GitHub/health-sentinel/src/components/layout/Sidebar.tsx'. ========
+======== Resolving module './components/dashboard/DashboardGrid' from 'C:/Users/HabibatLawal/OneDrive - Health Watch Foundation/Documents/GitHub/health-sentinel/src/App.tsx'. ========
+Explicitly specified module resolution kind: 'Bundler'.
+Resolving in CJS mode with conditions 'import', 'types'.
+Loading module as file / folder, candidate module location 'C:/Users/HabibatLawal/OneDrive - Health Watch Foundation/Documents/GitHub/health-sentinel/src/components/dashboard/DashboardGrid', target file types: TypeScript, JavaScript, Declaration, JSON.
+File 'C:/Users/HabibatLawal/OneDrive - Health Watch Foundation/Documents/GitHub/health-sentinel/src/components/dashboard/DashboardGrid.ts' does not exist.
+File 'C:/Users/HabibatLawal/OneDrive - Health Watch Foundation/Documents/GitHub/health-sentinel/src/components/dashboard/DashboardGrid.tsx' exists - use it as a name resolution result.
+======== Module name './components/dashboard/DashboardGrid' was successfully resolved to 'C:/Users/HabibatLawal/OneDrive - Health Watch Foundation/Documents/GitHub/health-sentinel/src/components/dashboard/DashboardGrid.tsx'. ========
+File 'C:/Users/HabibatLawal/OneDrive - Health Watch Foundation/Documents/GitHub/health-sentinel/node_modules/@types/react/package.json' exists according to earlier cached lookups.
+======== Resolving module './' from 'C:/Users/HabibatLawal/OneDrive - Health Watch Foundation/Documents/GitHub/health-sentinel/node_modules/@types/react/jsx-runtime.d.ts'. ========
+Explicitly specified module resolution kind: 'Bundler'.
+Resolving in CJS mode with conditions 'import', 'types'.
+Loading module as file / folder, candidate module location 'C:/Users/HabibatLawal/OneDrive - Health Watch Foundation/Documents/GitHub/health-sentinel/node_modules/@types/react/', target file types: TypeScript, JavaScript, Declaration, JSON.
+File 'C:/Users/HabibatLawal/OneDrive - Health Watch Foundation/Documents/GitHub/health-sentinel/node_modules/@types/react/package.json' exists according to earlier cached lookups.
+'package.json' has a 'typesVersions' field with version-specific path mappings.
+'package.json' does not have a 'typesVersions' entry that matches version '6.0'.
+'package.json' does not have a 'typings' field.
+'package.json' has 'types' field 'index.d.ts' that references 'C:/Users/HabibatLawal/OneDrive - Health Watch Foundation/Documents/GitHub/health-sentinel/node_modules/@types/react/index.d.ts'.
+File 'C:/Users/HabibatLawal/OneDrive - Health Watch Foundation/Documents/GitHub/health-sentinel/node_modules/@types/react/index.d.ts' exists - use it as a name resolution result.
+======== Module name './' was successfully resolved to 'C:/Users/HabibatLawal/OneDrive - Health Watch Foundation/Documents/GitHub/health-sentinel/node_modules/@types/react/index.d.ts' with Package ID '@types/react/ndex.d.ts@19.2.17'. ========
+File 'C:/Users/HabibatLawal/OneDrive - Health Watch Foundation/Documents/GitHub/health-sentinel/node_modules/@types/react/package.json' exists according to earlier cached lookups.
+File 'C:/Users/HabibatLawal/OneDrive - Health Watch Foundation/Documents/GitHub/health-sentinel/node_modules/@types/react/package.json' exists according to earlier cached lookups.
+======== Resolving module 'csstype' from 'C:/Users/HabibatLawal/OneDrive - Health Watch Foundation/Documents/GitHub/health-sentinel/node_modules/@types/react/index.d.ts'. ========
+Explicitly specified module resolution kind: 'Bundler'.
+Resolving in CJS mode with conditions 'import', 'types'.
+File 'C:/Users/HabibatLawal/OneDrive - Health Watch Foundation/Documents/GitHub/health-sentinel/node_modules/@types/react/package.json' exists according to earlier cached lookups.
+Loading module 'csstype' from 'node_modules' folder, target file types: TypeScript, JavaScript, Declaration, JSON.
+Searching all ancestor node_modules directories for preferred extensions: TypeScript, Declaration.
+Directory 'C:/Users/HabibatLawal/OneDrive - Health Watch Foundation/Documents/GitHub/health-sentinel/node_modules/@types/react/node_modules' does not exist, skipping all lookups in it.
+Directory 'C:/Users/HabibatLawal/OneDrive - Health Watch Foundation/Documents/GitHub/health-sentinel/node_modules/@types/node_modules' does not exist, skipping all lookups in it.
+Found 'package.json' at 'C:/Users/HabibatLawal/OneDrive - Health Watch Foundation/Documents/GitHub/health-sentinel/node_modules/csstype/package.json'.
+File 'C:/Users/HabibatLawal/OneDrive - Health Watch Foundation/Documents/GitHub/health-sentinel/node_modules/csstype.ts' does not exist.
+File 'C:/Users/HabibatLawal/OneDrive - Health Watch Foundation/Documents/GitHub/health-sentinel/node_modules/csstype.tsx' does not exist.
+File 'C:/Users/HabibatLawal/OneDrive - Health Watch Foundation/Documents/GitHub/health-sentinel/node_modules/csstype.d.ts' does not exist.
+'package.json' does not have a 'typesVersions' field.
+'package.json' does not have a 'typings' field.
+'package.json' has 'types' field 'index.d.ts' that references 'C:/Users/HabibatLawal/OneDrive - Health Watch Foundation/Documents/GitHub/health-sentinel/node_modules/csstype/index.d.ts'.
+File 'C:/Users/HabibatLawal/OneDrive - Health Watch Foundation/Documents/GitHub/health-sentinel/node_modules/csstype/index.d.ts' exists - use it as a name resolution result.
+'package.json' does not have a 'peerDependencies' field.
+Resolving real path for 'C:/Users/HabibatLawal/OneDrive - Health Watch Foundation/Documents/GitHub/health-sentinel/node_modules/csstype/index.d.ts', result 'C:/Users/HabibatLawal/OneDrive - Health Watch Foundation/Documents/GitHub/health-sentinel/node_modules/csstype/index.d.ts'.
+======== Module name 'csstype' was successfully resolved to 'C:/Users/HabibatLawal/OneDrive - Health Watch Foundation/Documents/GitHub/health-sentinel/node_modules/csstype/index.d.ts' with Package ID 'csstype/index.d.ts@3.2.3'. ========
+File 'C:/Users/HabibatLawal/OneDrive - Health Watch Foundation/Documents/GitHub/health-sentinel/node_modules/csstype/package.json' exists according to earlier cached lookups.
+======== Resolving module 'react/jsx-runtime' from 'C:/Users/HabibatLawal/OneDrive - Health Watch Foundation/Documents/GitHub/health-sentinel/src/components/layout/Header.tsx'. ========
+Explicitly specified module resolution kind: 'Bundler'.
+Resolving in CJS mode with conditions 'import', 'types'.
+File 'C:/Users/HabibatLawal/OneDrive - Health Watch Foundation/Documents/GitHub/health-sentinel/src/components/layout/package.json' does not exist.
+File 'C:/Users/HabibatLawal/OneDrive - Health Watch Foundation/Documents/GitHub/health-sentinel/src/components/package.json' does not exist.
+File 'C:/Users/HabibatLawal/OneDrive - Health Watch Foundation/Documents/GitHub/health-sentinel/src/package.json' does not exist according to earlier cached lookups.
+File 'C:/Users/HabibatLawal/OneDrive - Health Watch Foundation/Documents/GitHub/health-sentinel/package.json' exists according to earlier cached lookups.
+Loading module 'react/jsx-runtime' from 'node_modules' folder, target file types: TypeScript, JavaScript, Declaration, JSON.
+Searching all ancestor node_modules directories for preferred extensions: TypeScript, Declaration.
+Directory 'C:/Users/HabibatLawal/OneDrive - Health Watch Foundation/Documents/GitHub/health-sentinel/src/components/layout/node_modules' does not exist, skipping all lookups in it.
+Directory 'C:/Users/HabibatLawal/OneDrive - Health Watch Foundation/Documents/GitHub/health-sentinel/src/components/node_modules' does not exist, skipping all lookups in it.
+Resolution for module 'react/jsx-runtime' was found in cache from location 'C:/Users/HabibatLawal/OneDrive - Health Watch Foundation/Documents/GitHub/health-sentinel/src'.
+======== Module name 'react/jsx-runtime' was successfully resolved to 'C:/Users/HabibatLawal/OneDrive - Health Watch Foundation/Documents/GitHub/health-sentinel/node_modules/@types/react/jsx-runtime.d.ts' with Package ID '@types/react/jsx-runtime.d.ts@19.2.17'. ========
+======== Resolving module 'react/jsx-runtime' from 'C:/Users/HabibatLawal/OneDrive - Health Watch Foundation/Documents/GitHub/health-sentinel/src/components/layout/Sidebar.tsx'. ========
+Resolution for module 'react/jsx-runtime' was found in cache from location 'C:/Users/HabibatLawal/OneDrive - Health Watch Foundation/Documents/GitHub/health-sentinel/src/components/layout'.
+======== Module name 'react/jsx-runtime' was successfully resolved to 'C:/Users/HabibatLawal/OneDrive - Health Watch Foundation/Documents/GitHub/health-sentinel/node_modules/@types/react/jsx-runtime.d.ts' with Package ID '@types/react/jsx-runtime.d.ts@19.2.17'. ========
+======== Resolving module 'react/jsx-runtime' from 'C:/Users/HabibatLawal/OneDrive - Health Watch Foundation/Documents/GitHub/health-sentinel/src/components/dashboard/DashboardGrid.tsx'. ========
+Explicitly specified module resolution kind: 'Bundler'.
+Resolving in CJS mode with conditions 'import', 'types'.
+File 'C:/Users/HabibatLawal/OneDrive - Health Watch Foundation/Documents/GitHub/health-sentinel/src/components/dashboard/package.json' does not exist.
+File 'C:/Users/HabibatLawal/OneDrive - Health Watch Foundation/Documents/GitHub/health-sentinel/src/components/package.json' does not exist according to earlier cached lookups.
+File 'C:/Users/HabibatLawal/OneDrive - Health Watch Foundation/Documents/GitHub/health-sentinel/src/package.json' does not exist according to earlier cached lookups.
+File 'C:/Users/HabibatLawal/OneDrive - Health Watch Foundation/Documents/GitHub/health-sentinel/package.json' exists according to earlier cached lookups.
+Loading module 'react/jsx-runtime' from 'node_modules' folder, target file types: TypeScript, JavaScript, Declaration, JSON.
+Searching all ancestor node_modules directories for preferred extensions: TypeScript, Declaration.
+Directory 'C:/Users/HabibatLawal/OneDrive - Health Watch Foundation/Documents/GitHub/health-sentinel/src/components/dashboard/node_modules' does not exist, skipping all lookups in it.
+Resolution for module 'react/jsx-runtime' was found in cache from location 'C:/Users/HabibatLawal/OneDrive - Health Watch Foundation/Documents/GitHub/health-sentinel/src/components'.
+======== Module name 'react/jsx-runtime' was successfully resolved to 'C:/Users/HabibatLawal/OneDrive - Health Watch Foundation/Documents/GitHub/health-sentinel/node_modules/@types/react/jsx-runtime.d.ts' with Package ID '@types/react/jsx-runtime.d.ts@19.2.17'. ========
+======== Resolving module './DashboardCard' from 'C:/Users/HabibatLawal/OneDrive - Health Watch Foundation/Documents/GitHub/health-sentinel/src/components/dashboard/DashboardGrid.tsx'. ========
+Explicitly specified module resolution kind: 'Bundler'.
+Resolving in CJS mode with conditions 'import', 'types'.
+Loading module as file / folder, candidate module location 'C:/Users/HabibatLawal/OneDrive - Health Watch Foundation/Documents/GitHub/health-sentinel/src/components/dashboard/DashboardCard', target file types: TypeScript, JavaScript, Declaration, JSON.
+File 'C:/Users/HabibatLawal/OneDrive - Health Watch Foundation/Documents/GitHub/health-sentinel/src/components/dashboard/DashboardCard.ts' does not exist.
+File 'C:/Users/HabibatLawal/OneDrive - Health Watch Foundation/Documents/GitHub/health-sentinel/src/components/dashboard/DashboardCard.tsx' exists - use it as a name resolution result.
+======== Module name './DashboardCard' was successfully resolved to 'C:/Users/HabibatLawal/OneDrive - Health Watch Foundation/Documents/GitHub/health-sentinel/src/components/dashboard/DashboardCard.tsx'. ========
+======== Resolving module 'react/jsx-runtime' from 'C:/Users/HabibatLawal/OneDrive - Health Watch Foundation/Documents/GitHub/health-sentinel/src/components/dashboard/DashboardCard.tsx'. ========
+Resolution for module 'react/jsx-runtime' was found in cache from location 'C:/Users/HabibatLawal/OneDrive - Health Watch Foundation/Documents/GitHub/health-sentinel/src/components/dashboard'.
+======== Module name 'react/jsx-runtime' was successfully resolved to 'C:/Users/HabibatLawal/OneDrive - Health Watch Foundation/Documents/GitHub/health-sentinel/node_modules/@types/react/jsx-runtime.d.ts' with Package ID '@types/react/jsx-runtime.d.ts@19.2.17'. ========
+======== Resolving module 'react/jsx-runtime' from 'C:/Users/HabibatLawal/OneDrive - Health Watch Foundation/Documents/GitHub/health-sentinel/src/main.tsx'. ========
+Resolution for module 'react/jsx-runtime' was found in cache from location 'C:/Users/HabibatLawal/OneDrive - Health Watch Foundation/Documents/GitHub/health-sentinel/src'.
+======== Module name 'react/jsx-runtime' was successfully resolved to 'C:/Users/HabibatLawal/OneDrive - Health Watch Foundation/Documents/GitHub/health-sentinel/node_modules/@types/react/jsx-runtime.d.ts' with Package ID '@types/react/jsx-runtime.d.ts@19.2.17'. ========
+======== Resolving module 'react' from 'C:/Users/HabibatLawal/OneDrive - Health Watch Foundation/Documents/GitHub/health-sentinel/src/main.tsx'. ========
+Explicitly specified module resolution kind: 'Bundler'.
+Resolving in CJS mode with conditions 'import', 'types'.
+File 'C:/Users/HabibatLawal/OneDrive - Health Watch Foundation/Documents/GitHub/health-sentinel/src/package.json' does not exist according to earlier cached lookups.
+File 'C:/Users/HabibatLawal/OneDrive - Health Watch Foundation/Documents/GitHub/health-sentinel/package.json' exists according to earlier cached lookups.
+Loading module 'react' from 'node_modules' folder, target file types: TypeScript, JavaScript, Declaration, JSON.
+Searching all ancestor node_modules directories for preferred extensions: TypeScript, Declaration.
+Directory 'C:/Users/HabibatLawal/OneDrive - Health Watch Foundation/Documents/GitHub/health-sentinel/src/node_modules' does not exist, skipping all lookups in it.
+File 'C:/Users/HabibatLawal/OneDrive - Health Watch Foundation/Documents/GitHub/health-sentinel/node_modules/react/package.json' exists according to earlier cached lookups.
+Entering conditional exports.
+Saw non-matching condition 'react-server'.
+Matched 'exports' condition 'default'.
+Using 'exports' subpath '.' with target './index.js'.
+File name 'C:/Users/HabibatLawal/OneDrive - Health Watch Foundation/Documents/GitHub/health-sentinel/node_modules/react/index.js' has a '.js' extension - stripping it.
+File 'C:/Users/HabibatLawal/OneDrive - Health Watch Foundation/Documents/GitHub/health-sentinel/node_modules/react/index.ts' does not exist.
+File 'C:/Users/HabibatLawal/OneDrive - Health Watch Foundation/Documents/GitHub/health-sentinel/node_modules/react/index.tsx' does not exist.
+File 'C:/Users/HabibatLawal/OneDrive - Health Watch Foundation/Documents/GitHub/health-sentinel/node_modules/react/index.d.ts' does not exist.
+Failed to resolve under condition 'default'.
+Exiting conditional exports.
+File 'C:/Users/HabibatLawal/OneDrive - Health Watch Foundation/Documents/GitHub/health-sentinel/node_modules/@types/react/package.json' exists according to earlier cached lookups.
+Entering conditional exports.
+Saw non-matching condition 'types@<=5.0'.
+Matched 'exports' condition 'types'.
+Entering conditional exports.
+Matched 'exports' condition 'default'.
+Using 'exports' subpath '.' with target './index.d.ts'.
+File 'C:/Users/HabibatLawal/OneDrive - Health Watch Foundation/Documents/GitHub/health-sentinel/node_modules/@types/react/index.d.ts' exists - use it as a name resolution result.
+Resolved under condition 'default'.
+Exiting conditional exports.
+Resolved under condition 'types'.
+Exiting conditional exports.
+Resolving real path for 'C:/Users/HabibatLawal/OneDrive - Health Watch Foundation/Documents/GitHub/health-sentinel/node_modules/@types/react/index.d.ts', result 'C:/Users/HabibatLawal/OneDrive - Health Watch Foundation/Documents/GitHub/health-sentinel/node_modules/@types/react/index.d.ts'.
+======== Module name 'react' was successfully resolved to 'C:/Users/HabibatLawal/OneDrive - Health Watch Foundation/Documents/GitHub/health-sentinel/node_modules/@types/react/index.d.ts' with Package ID '@types/react/index.d.ts@19.2.17'. ========
+======== Resolving module 'react-dom/client' from 'C:/Users/HabibatLawal/OneDrive - Health Watch Foundation/Documents/GitHub/health-sentinel/src/main.tsx'. ========
+Explicitly specified module resolution kind: 'Bundler'.
+Resolving in CJS mode with conditions 'import', 'types'.
+File 'C:/Users/HabibatLawal/OneDrive - Health Watch Foundation/Documents/GitHub/health-sentinel/src/package.json' does not exist according to earlier cached lookups.
+File 'C:/Users/HabibatLawal/OneDrive - Health Watch Foundation/Documents/GitHub/health-sentinel/package.json' exists according to earlier cached lookups.
+Loading module 'react-dom/client' from 'node_modules' folder, target file types: TypeScript, JavaScript, Declaration, JSON.
+Searching all ancestor node_modules directories for preferred extensions: TypeScript, Declaration.
+Directory 'C:/Users/HabibatLawal/OneDrive - Health Watch Foundation/Documents/GitHub/health-sentinel/src/node_modules' does not exist, skipping all lookups in it.
+Found 'package.json' at 'C:/Users/HabibatLawal/OneDrive - Health Watch Foundation/Documents/GitHub/health-sentinel/node_modules/react-dom/package.json'.
+Entering conditional exports.
+Saw non-matching condition 'react-server'.
+Matched 'exports' condition 'default'.
+Using 'exports' subpath './client' with target './client.js'.
+File name 'C:/Users/HabibatLawal/OneDrive - Health Watch Foundation/Documents/GitHub/health-sentinel/node_modules/react-dom/client.js' has a '.js' extension - stripping it.
+File 'C:/Users/HabibatLawal/OneDrive - Health Watch Foundation/Documents/GitHub/health-sentinel/node_modules/react-dom/client.ts' does not exist.
+File 'C:/Users/HabibatLawal/OneDrive - Health Watch Foundation/Documents/GitHub/health-sentinel/node_modules/react-dom/client.tsx' does not exist.
+File 'C:/Users/HabibatLawal/OneDrive - Health Watch Foundation/Documents/GitHub/health-sentinel/node_modules/react-dom/client.d.ts' does not exist.
+Failed to resolve under condition 'default'.
+Exiting conditional exports.
+Export specifier './client' does not exist in package.json scope at path 'C:/Users/HabibatLawal/OneDrive - Health Watch Foundation/Documents/GitHub/health-sentinel/node_modules/react-dom'.
+Found 'package.json' at 'C:/Users/HabibatLawal/OneDrive - Health Watch Foundation/Documents/GitHub/health-sentinel/node_modules/@types/react-dom/package.json'.
+Entering conditional exports.
+Matched 'exports' condition 'types'.
+Entering conditional exports.
+Matched 'exports' condition 'default'.
+Using 'exports' subpath './client' with target './client.d.ts'.
+File 'C:/Users/HabibatLawal/OneDrive - Health Watch Foundation/Documents/GitHub/health-sentinel/node_modules/@types/react-dom/client.d.ts' exists - use it as a name resolution result.
+'package.json' has a 'peerDependencies' field.
+Resolving real path for 'C:/Users/HabibatLawal/OneDrive - Health Watch Foundation/Documents/GitHub/health-sentinel/node_modules/@types/react-dom', result 'C:/Users/HabibatLawal/OneDrive - Health Watch Foundation/Documents/GitHub/health-sentinel/node_modules/@types/react-dom'.
+File 'C:/Users/HabibatLawal/OneDrive - Health Watch Foundation/Documents/GitHub/health-sentinel/node_modules/@types/react/package.json' exists according to earlier cached lookups.
+Found peerDependency '@types/react' with '19.2.17' version.
+Resolved under condition 'default'.
+Exiting conditional exports.
+Resolved under condition 'types'.
+Exiting conditional exports.
+Resolving real path for 'C:/Users/HabibatLawal/OneDrive - Health Watch Foundation/Documents/GitHub/health-sentinel/node_modules/@types/react-dom/client.d.ts', result 'C:/Users/HabibatLawal/OneDrive - Health Watch Foundation/Documents/GitHub/health-sentinel/node_modules/@types/react-dom/client.d.ts'.
+======== Module name 'react-dom/client' was successfully resolved to 'C:/Users/HabibatLawal/OneDrive - Health Watch Foundation/Documents/GitHub/health-sentinel/node_modules/@types/react-dom/client.d.ts' with Package ID '@types/react-dom/client.d.ts@19.2.3+@types/react@19.2.17'. ========
+======== Resolving module './index.css' from 'C:/Users/HabibatLawal/OneDrive - Health Watch Foundation/Documents/GitHub/health-sentinel/src/main.tsx'. ========
+Explicitly specified module resolution kind: 'Bundler'.
+Resolving in CJS mode with conditions 'import', 'types'.
+Loading module as file / folder, candidate module location 'C:/Users/HabibatLawal/OneDrive - Health Watch Foundation/Documents/GitHub/health-sentinel/src/index.css', target file types: TypeScript, JavaScript, Declaration, JSON.
+File name 'C:/Users/HabibatLawal/OneDrive - Health Watch Foundation/Documents/GitHub/health-sentinel/src/index.css' has a '.css' extension - stripping it.
+File 'C:/Users/HabibatLawal/OneDrive - Health Watch Foundation/Documents/GitHub/health-sentinel/src/index.d.css.ts' does not exist.
+File 'C:/Users/HabibatLawal/OneDrive - Health Watch Foundation/Documents/GitHub/health-sentinel/src/index.css.ts' does not exist.
+File 'C:/Users/HabibatLawal/OneDrive - Health Watch Foundation/Documents/GitHub/health-sentinel/src/index.css.tsx' does not exist.
+File 'C:/Users/HabibatLawal/OneDrive - Health Watch Foundation/Documents/GitHub/health-sentinel/src/index.css.d.ts' does not exist.
+File 'C:/Users/HabibatLawal/OneDrive - Health Watch Foundation/Documents/GitHub/health-sentinel/src/index.css.js' does not exist.
+File 'C:/Users/HabibatLawal/OneDrive - Health Watch Foundation/Documents/GitHub/health-sentinel/src/index.css.jsx' does not exist.
+Directory 'C:/Users/HabibatLawal/OneDrive - Health Watch Foundation/Documents/GitHub/health-sentinel/src/index.css' does not exist, skipping all lookups in it.
+======== Module name './index.css' was not resolved. ========
+======== Resolving module './App.tsx' from 'C:/Users/HabibatLawal/OneDrive - Health Watch Foundation/Documents/GitHub/health-sentinel/src/main.tsx'. ========
+Explicitly specified module resolution kind: 'Bundler'.
+Resolving in CJS mode with conditions 'import', 'types'.
+Loading module as file / folder, candidate module location 'C:/Users/HabibatLawal/OneDrive - Health Watch Foundation/Documents/GitHub/health-sentinel/src/App.tsx', target file types: TypeScript, JavaScript, Declaration, JSON.
+File name 'C:/Users/HabibatLawal/OneDrive - Health Watch Foundation/Documents/GitHub/health-sentinel/src/App.tsx' has a '.tsx' extension - stripping it.
+File 'C:/Users/HabibatLawal/OneDrive - Health Watch Foundation/Documents/GitHub/health-sentinel/src/App.tsx' exists - use it as a name resolution result.
+======== Module name './App.tsx' was successfully resolved to 'C:/Users/HabibatLawal/OneDrive - Health Watch Foundation/Documents/GitHub/health-sentinel/src/App.tsx'. ========
+File 'C:/Users/HabibatLawal/OneDrive - Health Watch Foundation/Documents/GitHub/health-sentinel/node_modules/@types/react-dom/package.json' exists according to earlier cached lookups.
+======== Resolving module 'react' from 'C:/Users/HabibatLawal/OneDrive - Health Watch Foundation/Documents/GitHub/health-sentinel/node_modules/@types/react-dom/client.d.ts'. ========
+Explicitly specified module resolution kind: 'Bundler'.
+Resolving in CJS mode with conditions 'require', 'types'.
+File 'C:/Users/HabibatLawal/OneDrive - Health Watch Foundation/Documents/GitHub/health-sentinel/node_modules/@types/react-dom/package.json' exists according to earlier cached lookups.
+Loading module 'react' from 'node_modules' folder, target file types: TypeScript, JavaScript, Declaration, JSON.
+Searching all ancestor node_modules directories for preferred extensions: TypeScript, Declaration.
+Directory 'C:/Users/HabibatLawal/OneDrive - Health Watch Foundation/Documents/GitHub/health-sentinel/node_modules/@types/react-dom/node_modules' does not exist, skipping all lookups in it.
+Directory 'C:/Users/HabibatLawal/OneDrive - Health Watch Foundation/Documents/GitHub/health-sentinel/node_modules/@types/node_modules' does not exist, skipping all lookups in it.
+File 'C:/Users/HabibatLawal/OneDrive - Health Watch Foundation/Documents/GitHub/health-sentinel/node_modules/react/package.json' exists according to earlier cached lookups.
+Entering conditional exports.
+Saw non-matching condition 'react-server'.
+Matched 'exports' condition 'default'.
+Using 'exports' subpath '.' with target './index.js'.
+File name 'C:/Users/HabibatLawal/OneDrive - Health Watch Foundation/Documents/GitHub/health-sentinel/node_modules/react/index.js' has a '.js' extension - stripping it.
+File 'C:/Users/HabibatLawal/OneDrive - Health Watch Foundation/Documents/GitHub/health-sentinel/node_modules/react/index.ts' does not exist.
+File 'C:/Users/HabibatLawal/OneDrive - Health Watch Foundation/Documents/GitHub/health-sentinel/node_modules/react/index.tsx' does not exist.
+File 'C:/Users/HabibatLawal/OneDrive - Health Watch Foundation/Documents/GitHub/health-sentinel/node_modules/react/index.d.ts' does not exist.
+Failed to resolve under condition 'default'.
+Exiting conditional exports.
+File 'C:/Users/HabibatLawal/OneDrive - Health Watch Foundation/Documents/GitHub/health-sentinel/node_modules/@types/react/package.json' exists according to earlier cached lookups.
+Entering conditional exports.
+Saw non-matching condition 'types@<=5.0'.
+Matched 'exports' condition 'types'.
+Entering conditional exports.
+Matched 'exports' condition 'default'.
+Using 'exports' subpath '.' with target './index.d.ts'.
+File 'C:/Users/HabibatLawal/OneDrive - Health Watch Foundation/Documents/GitHub/health-sentinel/node_modules/@types/react/index.d.ts' exists - use it as a name resolution result.
+Resolved under condition 'default'.
+Exiting conditional exports.
+Resolved under condition 'types'.
+Exiting conditional exports.
+Resolving real path for 'C:/Users/HabibatLawal/OneDrive - Health Watch Foundation/Documents/GitHub/health-sentinel/node_modules/@types/react/index.d.ts', result 'C:/Users/HabibatLawal/OneDrive - Health Watch Foundation/Documents/GitHub/health-sentinel/node_modules/@types/react/index.d.ts'.
+======== Module name 'react' was successfully resolved to 'C:/Users/HabibatLawal/OneDrive - Health Watch Foundation/Documents/GitHub/health-sentinel/node_modules/@types/react/index.d.ts' with Package ID '@types/react/index.d.ts@19.2.17'. ========
+======== Resolving module 'react/jsx-runtime' from 'C:/Users/HabibatLawal/OneDrive - Health Watch Foundation/Documents/GitHub/health-sentinel/src/components/dashboard/StatusBanner.tsx'. ========
+Resolution for module 'react/jsx-runtime' was found in cache from location 'C:/Users/HabibatLawal/OneDrive - Health Watch Foundation/Documents/GitHub/health-sentinel/src/components/dashboard'.
+======== Module name 'react/jsx-runtime' was successfully resolved to 'C:/Users/HabibatLawal/OneDrive - Health Watch Foundation/Documents/GitHub/health-sentinel/node_modules/@types/react/jsx-runtime.d.ts' with Package ID '@types/react/jsx-runtime.d.ts@19.2.17'. ========
+======== Resolving module 'react/jsx-runtime' from 'C:/Users/HabibatLawal/OneDrive - Health Watch Foundation/Documents/GitHub/health-sentinel/src/components/dashboard/SummaryPanel.tsx'. ========
+Resolution for module 'react/jsx-runtime' was found in cache from location 'C:/Users/HabibatLawal/OneDrive - Health Watch Foundation/Documents/GitHub/health-sentinel/src/components/dashboard'.
+======== Module name 'react/jsx-runtime' was successfully resolved to 'C:/Users/HabibatLawal/OneDrive - Health Watch Foundation/Documents/GitHub/health-sentinel/node_modules/@types/react/jsx-runtime.d.ts' with Package ID '@types/react/jsx-runtime.d.ts@19.2.17'. ========
+======== Resolving module 'react/jsx-runtime' from 'C:/Users/HabibatLawal/OneDrive - Health Watch Foundation/Documents/GitHub/health-sentinel/src/components/layout/Footer.tsx'. ========
+Resolution for module 'react/jsx-runtime' was found in cache from location 'C:/Users/HabibatLawal/OneDrive - Health Watch Foundation/Documents/GitHub/health-sentinel/src/components/layout'.
+======== Module name 'react/jsx-runtime' was successfully resolved to 'C:/Users/HabibatLawal/OneDrive - Health Watch Foundation/Documents/GitHub/health-sentinel/node_modules/@types/react/jsx-runtime.d.ts' with Package ID '@types/react/jsx-runtime.d.ts@19.2.17'. ========
+======== Resolving type reference directive 'vite/client', containing file 'C:/Users/HabibatLawal/OneDrive - Health Watch Foundation/Documents/GitHub/health-sentinel/__inferred type names__.ts', root directory 'C:/Users/HabibatLawal/OneDrive - Health Watch Foundation/Documents/GitHub/health-sentinel/node_modules/@types,C:/Users/HabibatLawal/OneDrive - Health Watch Foundation/Documents/GitHub/node_modules/@types,C:/Users/HabibatLawal/OneDrive - Health Watch Foundation/Documents/node_modules/@types,C:/Users/HabibatLawal/OneDrive - Health Watch Foundation/node_modules/@types,C:/Users/HabibatLawal/node_modules/@types,C:/Users/node_modules/@types,C:/node_modules/@types'. ========
+Resolving with primary search path 'C:/Users/HabibatLawal/OneDrive - Health Watch Foundation/Documents/GitHub/health-sentinel/node_modules/@types, C:/Users/HabibatLawal/OneDrive - Health Watch Foundation/Documents/GitHub/node_modules/@types, C:/Users/HabibatLawal/OneDrive - Health Watch Foundation/Documents/node_modules/@types, C:/Users/HabibatLawal/OneDrive - Health Watch Foundation/node_modules/@types, C:/Users/HabibatLawal/node_modules/@types, C:/Users/node_modules/@types, C:/node_modules/@types'.
+Directory 'C:/Users/HabibatLawal/OneDrive - Health Watch Foundation/Documents/GitHub/node_modules/@types' does not exist, skipping all lookups in it.
+Directory 'C:/Users/HabibatLawal/OneDrive - Health Watch Foundation/Documents/node_modules/@types' does not exist, skipping all lookups in it.
+Directory 'C:/Users/HabibatLawal/OneDrive - Health Watch Foundation/node_modules/@types' does not exist, skipping all lookups in it.
+Directory 'C:/Users/HabibatLawal/node_modules/@types' does not exist, skipping all lookups in it.
+Directory 'C:/Users/node_modules/@types' does not exist, skipping all lookups in it.
+Directory 'C:/node_modules/@types' does not exist, skipping all lookups in it.
+Looking up in 'node_modules' folder, initial location 'C:/Users/HabibatLawal/OneDrive - Health Watch Foundation/Documents/GitHub/health-sentinel'.
+Searching all ancestor node_modules directories for preferred extensions: Declaration.
+Found 'package.json' at 'C:/Users/HabibatLawal/OneDrive - Health Watch Foundation/Documents/GitHub/health-sentinel/node_modules/vite/package.json'.
+Entering conditional exports.
+Matched 'exports' condition 'types'.
+Using 'exports' subpath './client' with target './client.d.ts'.
+File 'C:/Users/HabibatLawal/OneDrive - Health Watch Foundation/Documents/GitHub/health-sentinel/node_modules/vite/client.d.ts' exists - use it as a name resolution result.
+'package.json' has a 'peerDependencies' field.
+Resolving real path for 'C:/Users/HabibatLawal/OneDrive - Health Watch Foundation/Documents/GitHub/health-sentinel/node_modules/vite', result 'C:/Users/HabibatLawal/OneDrive - Health Watch Foundation/Documents/GitHub/health-sentinel/node_modules/vite'.
+Found 'package.json' at 'C:/Users/HabibatLawal/OneDrive - Health Watch Foundation/Documents/GitHub/health-sentinel/node_modules/@types/node/package.json'.
+Found peerDependency '@types/node' with '24.13.3' version.
+Failed to find peerDependency '@vitejs/devtools'.
+Failed to find peerDependency 'esbuild'.
+Failed to find peerDependency 'jiti'.
+Failed to find peerDependency 'less'.
+Failed to find peerDependency 'sass'.
+Failed to find peerDependency 'sass-embedded'.
+Failed to find peerDependency 'stylus'.
+Failed to find peerDependency 'sugarss'.
+Failed to find peerDependency 'terser'.
+Failed to find peerDependency 'tsx'.
+Failed to find peerDependency 'yaml'.
+Resolved under condition 'types'.
+Exiting conditional exports.
+Resolving real path for 'C:/Users/HabibatLawal/OneDrive - Health Watch Foundation/Documents/GitHub/health-sentinel/node_modules/vite/client.d.ts', result 'C:/Users/HabibatLawal/OneDrive - Health Watch Foundation/Documents/GitHub/health-sentinel/node_modules/vite/client.d.ts'.
+======== Type reference directive 'vite/client' was successfully resolved to 'C:/Users/HabibatLawal/OneDrive - Health Watch Foundation/Documents/GitHub/health-sentinel/node_modules/vite/client.d.ts' with Package ID 'vite/client.d.ts@8.1.5+@types/node@24.13.3', primary: false. ========
+File 'C:/Users/HabibatLawal/OneDrive - Health Watch Foundation/Documents/GitHub/health-sentinel/node_modules/vite/package.json' exists according to earlier cached lookups.
+File 'C:/Users/HabibatLawal/OneDrive - Health Watch Foundation/Documents/GitHub/health-sentinel/node_modules/vite/types/package.json' does not exist.
+File 'C:/Users/HabibatLawal/OneDrive - Health Watch Foundation/Documents/GitHub/health-sentinel/node_modules/vite/package.json' exists according to earlier cached lookups.
+======== Resolving module './hot.js' from 'C:/Users/HabibatLawal/OneDrive - Health Watch Foundation/Documents/GitHub/health-sentinel/node_modules/vite/types/importMeta.d.ts'. ========
+Explicitly specified module resolution kind: 'Bundler'.
+Resolving in CJS mode with conditions 'import', 'types'.
+Loading module as file / folder, candidate module location 'C:/Users/HabibatLawal/OneDrive - Health Watch Foundation/Documents/GitHub/health-sentinel/node_modules/vite/types/hot.js', target file types: TypeScript, JavaScript, Declaration, JSON.
+File name 'C:/Users/HabibatLawal/OneDrive - Health Watch Foundation/Documents/GitHub/health-sentinel/node_modules/vite/types/hot.js' has a '.js' extension - stripping it.
+File 'C:/Users/HabibatLawal/OneDrive - Health Watch Foundation/Documents/GitHub/health-sentinel/node_modules/vite/types/hot.ts' does not exist.
+File 'C:/Users/HabibatLawal/OneDrive - Health Watch Foundation/Documents/GitHub/health-sentinel/node_modules/vite/types/hot.tsx' does not exist.
+File 'C:/Users/HabibatLawal/OneDrive - Health Watch Foundation/Documents/GitHub/health-sentinel/node_modules/vite/types/hot.d.ts' exists - use it as a name resolution result.
+File 'C:/Users/HabibatLawal/OneDrive - Health Watch Foundation/Documents/GitHub/health-sentinel/node_modules/vite/package.json' exists according to earlier cached lookups.
+======== Module name './hot.js' was successfully resolved to 'C:/Users/HabibatLawal/OneDrive - Health Watch Foundation/Documents/GitHub/health-sentinel/node_modules/vite/types/hot.d.ts' with Package ID 'vite/types/hot.d.ts@8.1.5+@types/node@24.13.3'. ========
+======== Resolving module './importGlob.js' from 'C:/Users/HabibatLawal/OneDrive - Health Watch Foundation/Documents/GitHub/health-sentinel/node_modules/vite/types/importMeta.d.ts'. ========
+Explicitly specified module resolution kind: 'Bundler'.
+Resolving in CJS mode with conditions 'import', 'types'.
+Loading module as file / folder, candidate module location 'C:/Users/HabibatLawal/OneDrive - Health Watch Foundation/Documents/GitHub/health-sentinel/node_modules/vite/types/importGlob.js', target file types: TypeScript, JavaScript, Declaration, JSON.
+File name 'C:/Users/HabibatLawal/OneDrive - Health Watch Foundation/Documents/GitHub/health-sentinel/node_modules/vite/types/importGlob.js' has a '.js' extension - stripping it.
+File 'C:/Users/HabibatLawal/OneDrive - Health Watch Foundation/Documents/GitHub/health-sentinel/node_modules/vite/types/importGlob.ts' does not exist.
+File 'C:/Users/HabibatLawal/OneDrive - Health Watch Foundation/Documents/GitHub/health-sentinel/node_modules/vite/types/importGlob.tsx' does not exist.
+File 'C:/Users/HabibatLawal/OneDrive - Health Watch Foundation/Documents/GitHub/health-sentinel/node_modules/vite/types/importGlob.d.ts' exists - use it as a name resolution result.
+File 'C:/Users/HabibatLawal/OneDrive - Health Watch Foundation/Documents/GitHub/health-sentinel/node_modules/vite/package.json' exists according to earlier cached lookups.
+======== Module name './importGlob.js' was successfully resolved to 'C:/Users/HabibatLawal/OneDrive - Health Watch Foundation/Documents/GitHub/health-sentinel/node_modules/vite/types/importGlob.d.ts' with Package ID 'vite/types/importGlob.d.ts@8.1.5+@types/node@24.13.3'. ========
+File 'C:/Users/HabibatLawal/OneDrive - Health Watch Foundation/Documents/GitHub/health-sentinel/node_modules/vite/types/package.json' does not exist according to earlier cached lookups.
+File 'C:/Users/HabibatLawal/OneDrive - Health Watch Foundation/Documents/GitHub/health-sentinel/node_modules/vite/package.json' exists according to earlier cached lookups.
+======== Resolving module './customEvent.js' from 'C:/Users/HabibatLawal/OneDrive - Health Watch Foundation/Documents/GitHub/health-sentinel/node_modules/vite/types/hot.d.ts'. ========
+Explicitly specified module resolution kind: 'Bundler'.
+Resolving in CJS mode with conditions 'import', 'types'.
+Loading module as file / folder, candidate module location 'C:/Users/HabibatLawal/OneDrive - Health Watch Foundation/Documents/GitHub/health-sentinel/node_modules/vite/types/customEvent.js', target file types: TypeScript, JavaScript, Declaration, JSON.
+File name 'C:/Users/HabibatLawal/OneDrive - Health Watch Foundation/Documents/GitHub/health-sentinel/node_modules/vite/types/customEvent.js' has a '.js' extension - stripping it.
+File 'C:/Users/HabibatLawal/OneDrive - Health Watch Foundation/Documents/GitHub/health-sentinel/node_modules/vite/types/customEvent.ts' does not exist.
+File 'C:/Users/HabibatLawal/OneDrive - Health Watch Foundation/Documents/GitHub/health-sentinel/node_modules/vite/types/customEvent.tsx' does not exist.
+File 'C:/Users/HabibatLawal/OneDrive - Health Watch Foundation/Documents/GitHub/health-sentinel/node_modules/vite/types/customEvent.d.ts' exists - use it as a name resolution result.
+File 'C:/Users/HabibatLawal/OneDrive - Health Watch Foundation/Documents/GitHub/health-sentinel/node_modules/vite/package.json' exists according to earlier cached lookups.
+======== Module name './customEvent.js' was successfully resolved to 'C:/Users/HabibatLawal/OneDrive - Health Watch Foundation/Documents/GitHub/health-sentinel/node_modules/vite/types/customEvent.d.ts' with Package ID 'vite/types/customEvent.d.ts@8.1.5+@types/node@24.13.3'. ========
+File 'C:/Users/HabibatLawal/OneDrive - Health Watch Foundation/Documents/GitHub/health-sentinel/node_modules/vite/types/package.json' does not exist according to earlier cached lookups.
+File 'C:/Users/HabibatLawal/OneDrive - Health Watch Foundation/Documents/GitHub/health-sentinel/node_modules/vite/package.json' exists according to earlier cached lookups.
+======== Resolving module './hmrPayload.js' from 'C:/Users/HabibatLawal/OneDrive - Health Watch Foundation/Documents/GitHub/health-sentinel/node_modules/vite/types/customEvent.d.ts'. ========
+Explicitly specified module resolution kind: 'Bundler'.
+Resolving in CJS mode with conditions 'import', 'types'.
+Loading module as file / folder, candidate module location 'C:/Users/HabibatLawal/OneDrive - Health Watch Foundation/Documents/GitHub/health-sentinel/node_modules/vite/types/hmrPayload.js', target file types: TypeScript, JavaScript, Declaration, JSON.
+File name 'C:/Users/HabibatLawal/OneDrive - Health Watch Foundation/Documents/GitHub/health-sentinel/node_modules/vite/types/hmrPayload.js' has a '.js' extension - stripping it.
+File 'C:/Users/HabibatLawal/OneDrive - Health Watch Foundation/Documents/GitHub/health-sentinel/node_modules/vite/types/hmrPayload.ts' does not exist.
+File 'C:/Users/HabibatLawal/OneDrive - Health Watch Foundation/Documents/GitHub/health-sentinel/node_modules/vite/types/hmrPayload.tsx' does not exist.
+File 'C:/Users/HabibatLawal/OneDrive - Health Watch Foundation/Documents/GitHub/health-sentinel/node_modules/vite/types/hmrPayload.d.ts' exists - use it as a name resolution result.
+File 'C:/Users/HabibatLawal/OneDrive - Health Watch Foundation/Documents/GitHub/health-sentinel/node_modules/vite/package.json' exists according to earlier cached lookups.
+======== Module name './hmrPayload.js' was successfully resolved to 'C:/Users/HabibatLawal/OneDrive - Health Watch Foundation/Documents/GitHub/health-sentinel/node_modules/vite/types/hmrPayload.d.ts' with Package ID 'vite/types/hmrPayload.d.ts@8.1.5+@types/node@24.13.3'. ========
+File 'C:/Users/HabibatLawal/OneDrive - Health Watch Foundation/Documents/GitHub/health-sentinel/node_modules/vite/types/package.json' does not exist according to earlier cached lookups.
+File 'C:/Users/HabibatLawal/OneDrive - Health Watch Foundation/Documents/GitHub/health-sentinel/node_modules/vite/package.json' exists according to earlier cached lookups.
+File 'C:/Users/HabibatLawal/OneDrive - Health Watch Foundation/Documents/GitHub/health-sentinel/node_modules/vite/types/package.json' does not exist according to earlier cached lookups.
+File 'C:/Users/HabibatLawal/OneDrive - Health Watch Foundation/Documents/GitHub/health-sentinel/node_modules/vite/package.json' exists according to earlier cached lookups.
+File 'C:/Users/HabibatLawal/OneDrive - Health Watch Foundation/Documents/GitHub/health-sentinel/node_modules/typescript/lib/package.json' does not exist.
+Found 'package.json' at 'C:/Users/HabibatLawal/OneDrive - Health Watch Foundation/Documents/GitHub/health-sentinel/node_modules/typescript/package.json'.
+File 'C:/Users/HabibatLawal/OneDrive - Health Watch Foundation/Documents/GitHub/health-sentinel/node_modules/typescript/lib/package.json' does not exist according to earlier cached lookups.
+File 'C:/Users/HabibatLawal/OneDrive - Health Watch Foundation/Documents/GitHub/health-sentinel/node_modules/typescript/package.json' exists according to earlier cached lookups.
+File 'C:/Users/HabibatLawal/OneDrive - Health Watch Foundation/Documents/GitHub/health-sentinel/node_modules/typescript/lib/package.json' does not exist according to earlier cached lookups.
+File 'C:/Users/HabibatLawal/OneDrive - Health Watch Foundation/Documents/GitHub/health-sentinel/node_modules/typescript/package.json' exists according to earlier cached lookups.
+File 'C:/Users/HabibatLawal/OneDrive - Health Watch Foundation/Documents/GitHub/health-sentinel/node_modules/typescript/lib/package.json' does not exist according to earlier cached lookups.
+File 'C:/Users/HabibatLawal/OneDrive - Health Watch Foundation/Documents/GitHub/health-sentinel/node_modules/typescript/package.json' exists according to earlier cached lookups.
+File 'C:/Users/HabibatLawal/OneDrive - Health Watch Foundation/Documents/GitHub/health-sentinel/node_modules/typescript/lib/package.json' does not exist according to earlier cached lookups.
+File 'C:/Users/HabibatLawal/OneDrive - Health Watch Foundation/Documents/GitHub/health-sentinel/node_modules/typescript/package.json' exists according to earlier cached lookups.
+File 'C:/Users/HabibatLawal/OneDrive - Health Watch Foundation/Documents/GitHub/health-sentinel/node_modules/typescript/lib/package.json' does not exist according to earlier cached lookups.
+File 'C:/Users/HabibatLawal/OneDrive - Health Watch Foundation/Documents/GitHub/health-sentinel/node_modules/typescript/package.json' exists according to earlier cached lookups.
+File 'C:/Users/HabibatLawal/OneDrive - Health Watch Foundation/Documents/GitHub/health-sentinel/node_modules/typescript/lib/package.json' does not exist according to earlier cached lookups.
+File 'C:/Users/HabibatLawal/OneDrive - Health Watch Foundation/Documents/GitHub/health-sentinel/node_modules/typescript/package.json' exists according to earlier cached lookups.
+File 'C:/Users/HabibatLawal/OneDrive - Health Watch Foundation/Documents/GitHub/health-sentinel/node_modules/typescript/lib/package.json' does not exist according to earlier cached lookups.
+File 'C:/Users/HabibatLawal/OneDrive - Health Watch Foundation/Documents/GitHub/health-sentinel/node_modules/typescript/package.json' exists according to earlier cached lookups.
+File 'C:/Users/HabibatLawal/OneDrive - Health Watch Foundation/Documents/GitHub/health-sentinel/node_modules/typescript/lib/package.json' does not exist according to earlier cached lookups.
+File 'C:/Users/HabibatLawal/OneDrive - Health Watch Foundation/Documents/GitHub/health-sentinel/node_modules/typescript/package.json' exists according to earlier cached lookups.
+File 'C:/Users/HabibatLawal/OneDrive - Health Watch Foundation/Documents/GitHub/health-sentinel/node_modules/typescript/lib/package.json' does not exist according to earlier cached lookups.
+File 'C:/Users/HabibatLawal/OneDrive - Health Watch Foundation/Documents/GitHub/health-sentinel/node_modules/typescript/package.json' exists according to earlier cached lookups.
+File 'C:/Users/HabibatLawal/OneDrive - Health Watch Foundation/Documents/GitHub/health-sentinel/node_modules/typescript/lib/package.json' does not exist according to earlier cached lookups.
+File 'C:/Users/HabibatLawal/OneDrive - Health Watch Foundation/Documents/GitHub/health-sentinel/node_modules/typescript/package.json' exists according to earlier cached lookups.
+File 'C:/Users/HabibatLawal/OneDrive - Health Watch Foundation/Documents/GitHub/health-sentinel/node_modules/typescript/lib/package.json' does not exist according to earlier cached lookups.
+File 'C:/Users/HabibatLawal/OneDrive - Health Watch Foundation/Documents/GitHub/health-sentinel/node_modules/typescript/package.json' exists according to earlier cached lookups.
+File 'C:/Users/HabibatLawal/OneDrive - Health Watch Foundation/Documents/GitHub/health-sentinel/node_modules/typescript/lib/package.json' does not exist according to earlier cached lookups.
+File 'C:/Users/HabibatLawal/OneDrive - Health Watch Foundation/Documents/GitHub/health-sentinel/node_modules/typescript/package.json' exists according to earlier cached lookups.
+File 'C:/Users/HabibatLawal/OneDrive - Health Watch Foundation/Documents/GitHub/health-sentinel/node_modules/typescript/lib/package.json' does not exist according to earlier cached lookups.
+File 'C:/Users/HabibatLawal/OneDrive - Health Watch Foundation/Documents/GitHub/health-sentinel/node_modules/typescript/package.json' exists according to earlier cached lookups.
+File 'C:/Users/HabibatLawal/OneDrive - Health Watch Foundation/Documents/GitHub/health-sentinel/node_modules/typescript/lib/package.json' does not exist according to earlier cached lookups.
+File 'C:/Users/HabibatLawal/OneDrive - Health Watch Foundation/Documents/GitHub/health-sentinel/node_modules/typescript/package.json' exists according to earlier cached lookups.
+File 'C:/Users/HabibatLawal/OneDrive - Health Watch Foundation/Documents/GitHub/health-sentinel/node_modules/typescript/lib/package.json' does not exist according to earlier cached lookups.
+File 'C:/Users/HabibatLawal/OneDrive - Health Watch Foundation/Documents/GitHub/health-sentinel/node_modules/typescript/package.json' exists according to earlier cached lookups.
+File 'C:/Users/HabibatLawal/OneDrive - Health Watch Foundation/Documents/GitHub/health-sentinel/node_modules/typescript/lib/package.json' does not exist according to earlier cached lookups.
+File 'C:/Users/HabibatLawal/OneDrive - Health Watch Foundation/Documents/GitHub/health-sentinel/node_modules/typescript/package.json' exists according to earlier cached lookups.
+File 'C:/Users/HabibatLawal/OneDrive - Health Watch Foundation/Documents/GitHub/health-sentinel/node_modules/typescript/lib/package.json' does not exist according to earlier cached lookups.
+File 'C:/Users/HabibatLawal/OneDrive - Health Watch Foundation/Documents/GitHub/health-sentinel/node_modules/typescript/package.json' exists according to earlier cached lookups.
+File 'C:/Users/HabibatLawal/OneDrive - Health Watch Foundation/Documents/GitHub/health-sentinel/node_modules/typescript/lib/package.json' does not exist according to earlier cached lookups.
+File 'C:/Users/HabibatLawal/OneDrive - Health Watch Foundation/Documents/GitHub/health-sentinel/node_modules/typescript/package.json' exists according to earlier cached lookups.
+File 'C:/Users/HabibatLawal/OneDrive - Health Watch Foundation/Documents/GitHub/health-sentinel/node_modules/typescript/lib/package.json' does not exist according to earlier cached lookups.
+File 'C:/Users/HabibatLawal/OneDrive - Health Watch Foundation/Documents/GitHub/health-sentinel/node_modules/typescript/package.json' exists according to earlier cached lookups.
+File 'C:/Users/HabibatLawal/OneDrive - Health Watch Foundation/Documents/GitHub/health-sentinel/node_modules/typescript/lib/package.json' does not exist according to earlier cached lookups.
+File 'C:/Users/HabibatLawal/OneDrive - Health Watch Foundation/Documents/GitHub/health-sentinel/node_modules/typescript/package.json' exists according to earlier cached lookups.
+File 'C:/Users/HabibatLawal/OneDrive - Health Watch Foundation/Documents/GitHub/health-sentinel/node_modules/typescript/lib/package.json' does not exist according to earlier cached lookups.
+File 'C:/Users/HabibatLawal/OneDrive - Health Watch Foundation/Documents/GitHub/health-sentinel/node_modules/typescript/package.json' exists according to earlier cached lookups.
+File 'C:/Users/HabibatLawal/OneDrive - Health Watch Foundation/Documents/GitHub/health-sentinel/node_modules/typescript/lib/package.json' does not exist according to earlier cached lookups.
+File 'C:/Users/HabibatLawal/OneDrive - Health Watch Foundation/Documents/GitHub/health-sentinel/node_modules/typescript/package.json' exists according to earlier cached lookups.
+File 'C:/Users/HabibatLawal/OneDrive - Health Watch Foundation/Documents/GitHub/health-sentinel/node_modules/typescript/lib/package.json' does not exist according to earlier cached lookups.
+File 'C:/Users/HabibatLawal/OneDrive - Health Watch Foundation/Documents/GitHub/health-sentinel/node_modules/typescript/package.json' exists according to earlier cached lookups.
+File 'C:/Users/HabibatLawal/OneDrive - Health Watch Foundation/Documents/GitHub/health-sentinel/node_modules/typescript/lib/package.json' does not exist according to earlier cached lookups.
+File 'C:/Users/HabibatLawal/OneDrive - Health Watch Foundation/Documents/GitHub/health-sentinel/node_modules/typescript/package.json' exists according to earlier cached lookups.
+File 'C:/Users/HabibatLawal/OneDrive - Health Watch Foundation/Documents/GitHub/health-sentinel/node_modules/typescript/lib/package.json' does not exist according to earlier cached lookups.
+File 'C:/Users/HabibatLawal/OneDrive - Health Watch Foundation/Documents/GitHub/health-sentinel/node_modules/typescript/package.json' exists according to earlier cached lookups.
+File 'C:/Users/HabibatLawal/OneDrive - Health Watch Foundation/Documents/GitHub/health-sentinel/node_modules/typescript/lib/package.json' does not exist according to earlier cached lookups.
+File 'C:/Users/HabibatLawal/OneDrive - Health Watch Foundation/Documents/GitHub/health-sentinel/node_modules/typescript/package.json' exists according to earlier cached lookups.
+File 'C:/Users/HabibatLawal/OneDrive - Health Watch Foundation/Documents/GitHub/health-sentinel/node_modules/typescript/lib/package.json' does not exist according to earlier cached lookups.
+File 'C:/Users/HabibatLawal/OneDrive - Health Watch Foundation/Documents/GitHub/health-sentinel/node_modules/typescript/package.json' exists according to earlier cached lookups.
+File 'C:/Users/HabibatLawal/OneDrive - Health Watch Foundation/Documents/GitHub/health-sentinel/node_modules/typescript/lib/package.json' does not exist according to earlier cached lookups.
+File 'C:/Users/HabibatLawal/OneDrive - Health Watch Foundation/Documents/GitHub/health-sentinel/node_modules/typescript/package.json' exists according to earlier cached lookups.
+File 'C:/Users/HabibatLawal/OneDrive - Health Watch Foundation/Documents/GitHub/health-sentinel/node_modules/typescript/lib/package.json' does not exist according to earlier cached lookups.
+File 'C:/Users/HabibatLawal/OneDrive - Health Watch Foundation/Documents/GitHub/health-sentinel/node_modules/typescript/package.json' exists according to earlier cached lookups.
+File 'C:/Users/HabibatLawal/OneDrive - Health Watch Foundation/Documents/GitHub/health-sentinel/node_modules/typescript/lib/package.json' does not exist according to earlier cached lookups.
+File 'C:/Users/HabibatLawal/OneDrive - Health Watch Foundation/Documents/GitHub/health-sentinel/node_modules/typescript/package.json' exists according to earlier cached lookups.
+File 'C:/Users/HabibatLawal/OneDrive - Health Watch Foundation/Documents/GitHub/health-sentinel/node_modules/typescript/lib/package.json' does not exist according to earlier cached lookups.
+File 'C:/Users/HabibatLawal/OneDrive - Health Watch Foundation/Documents/GitHub/health-sentinel/node_modules/typescript/package.json' exists according to earlier cached lookups.
+File 'C:/Users/HabibatLawal/OneDrive - Health Watch Foundation/Documents/GitHub/health-sentinel/node_modules/typescript/lib/package.json' does not exist according to earlier cached lookups.
+File 'C:/Users/HabibatLawal/OneDrive - Health Watch Foundation/Documents/GitHub/health-sentinel/node_modules/typescript/package.json' exists according to earlier cached lookups.
+File 'C:/Users/HabibatLawal/OneDrive - Health Watch Foundation/Documents/GitHub/health-sentinel/node_modules/typescript/lib/package.json' does not exist according to earlier cached lookups.
+File 'C:/Users/HabibatLawal/OneDrive - Health Watch Foundation/Documents/GitHub/health-sentinel/node_modules/typescript/package.json' exists according to earlier cached lookups.
+File 'C:/Users/HabibatLawal/OneDrive - Health Watch Foundation/Documents/GitHub/health-sentinel/node_modules/typescript/lib/package.json' does not exist according to earlier cached lookups.
+File 'C:/Users/HabibatLawal/OneDrive - Health Watch Foundation/Documents/GitHub/health-sentinel/node_modules/typescript/package.json' exists according to earlier cached lookups.
+File 'C:/Users/HabibatLawal/OneDrive - Health Watch Foundation/Documents/GitHub/health-sentinel/node_modules/typescript/lib/package.json' does not exist according to earlier cached lookups.
+File 'C:/Users/HabibatLawal/OneDrive - Health Watch Foundation/Documents/GitHub/health-sentinel/node_modules/typescript/package.json' exists according to earlier cached lookups.
+File 'C:/Users/HabibatLawal/OneDrive - Health Watch Foundation/Documents/GitHub/health-sentinel/node_modules/typescript/lib/package.json' does not exist according to earlier cached lookups.
+File 'C:/Users/HabibatLawal/OneDrive - Health Watch Foundation/Documents/GitHub/health-sentinel/node_modules/typescript/package.json' exists according to earlier cached lookups.
+File 'C:/Users/HabibatLawal/OneDrive - Health Watch Foundation/Documents/GitHub/health-sentinel/node_modules/typescript/lib/package.json' does not exist according to earlier cached lookups.
+File 'C:/Users/HabibatLawal/OneDrive - Health Watch Foundation/Documents/GitHub/health-sentinel/node_modules/typescript/package.json' exists according to earlier cached lookups.
+File 'C:/Users/HabibatLawal/OneDrive - Health Watch Foundation/Documents/GitHub/health-sentinel/node_modules/typescript/lib/package.json' does not exist according to earlier cached lookups.
+File 'C:/Users/HabibatLawal/OneDrive - Health Watch Foundation/Documents/GitHub/health-sentinel/node_modules/typescript/package.json' exists according to earlier cached lookups.
+File 'C:/Users/HabibatLawal/OneDrive - Health Watch Foundation/Documents/GitHub/health-sentinel/node_modules/typescript/lib/package.json' does not exist according to earlier cached lookups.
+File 'C:/Users/HabibatLawal/OneDrive - Health Watch Foundation/Documents/GitHub/health-sentinel/node_modules/typescript/package.json' exists according to earlier cached lookups.
+File 'C:/Users/HabibatLawal/OneDrive - Health Watch Foundation/Documents/GitHub/health-sentinel/node_modules/typescript/lib/package.json' does not exist according to earlier cached lookups.
+File 'C:/Users/HabibatLawal/OneDrive - Health Watch Foundation/Documents/GitHub/health-sentinel/node_modules/typescript/package.json' exists according to earlier cached lookups.
+File 'C:/Users/HabibatLawal/OneDrive - Health Watch Foundation/Documents/GitHub/health-sentinel/node_modules/typescript/lib/package.json' does not exist according to earlier cached lookups.
+File 'C:/Users/HabibatLawal/OneDrive - Health Watch Foundation/Documents/GitHub/health-sentinel/node_modules/typescript/package.json' exists according to earlier cached lookups.
+File 'C:/Users/HabibatLawal/OneDrive - Health Watch Foundation/Documents/GitHub/health-sentinel/node_modules/typescript/lib/package.json' does not exist according to earlier cached lookups.
+File 'C:/Users/HabibatLawal/OneDrive - Health Watch Foundation/Documents/GitHub/health-sentinel/node_modules/typescript/package.json' exists according to earlier cached lookups.
+File 'C:/Users/HabibatLawal/OneDrive - Health Watch Foundation/Documents/GitHub/health-sentinel/node_modules/typescript/lib/package.json' does not exist according to earlier cached lookups.
+File 'C:/Users/HabibatLawal/OneDrive - Health Watch Foundation/Documents/GitHub/health-sentinel/node_modules/typescript/package.json' exists according to earlier cached lookups.
+File 'C:/Users/HabibatLawal/OneDrive - Health Watch Foundation/Documents/GitHub/health-sentinel/node_modules/typescript/lib/package.json' does not exist according to earlier cached lookups.
+File 'C:/Users/HabibatLawal/OneDrive - Health Watch Foundation/Documents/GitHub/health-sentinel/node_modules/typescript/package.json' exists according to earlier cached lookups.
+File 'C:/Users/HabibatLawal/OneDrive - Health Watch Foundation/Documents/GitHub/health-sentinel/node_modules/typescript/lib/package.json' does not exist according to earlier cached lookups.
+File 'C:/Users/HabibatLawal/OneDrive - Health Watch Foundation/Documents/GitHub/health-sentinel/node_modules/typescript/package.json' exists according to earlier cached lookups.
+File 'C:/Users/HabibatLawal/OneDrive - Health Watch Foundation/Documents/GitHub/health-sentinel/node_modules/typescript/lib/package.json' does not exist according to earlier cached lookups.
+File 'C:/Users/HabibatLawal/OneDrive - Health Watch Foundation/Documents/GitHub/health-sentinel/node_modules/typescript/package.json' exists according to earlier cached lookups.
+File 'C:/Users/HabibatLawal/OneDrive - Health Watch Foundation/Documents/GitHub/health-sentinel/node_modules/typescript/lib/package.json' does not exist according to earlier cached lookups.
+File 'C:/Users/HabibatLawal/OneDrive - Health Watch Foundation/Documents/GitHub/health-sentinel/node_modules/typescript/package.json' exists according to earlier cached lookups.
+File 'C:/Users/HabibatLawal/OneDrive - Health Watch Foundation/Documents/GitHub/health-sentinel/node_modules/typescript/lib/package.json' does not exist according to earlier cached lookups.
+File 'C:/Users/HabibatLawal/OneDrive - Health Watch Foundation/Documents/GitHub/health-sentinel/node_modules/typescript/package.json' exists according to earlier cached lookups.
+File 'C:/Users/HabibatLawal/OneDrive - Health Watch Foundation/Documents/GitHub/health-sentinel/node_modules/typescript/lib/package.json' does not exist according to earlier cached lookups.
+File 'C:/Users/HabibatLawal/OneDrive - Health Watch Foundation/Documents/GitHub/health-sentinel/node_modules/typescript/package.json' exists according to earlier cached lookups.
+File 'C:/Users/HabibatLawal/OneDrive - Health Watch Foundation/Documents/GitHub/health-sentinel/node_modules/typescript/lib/package.json' does not exist according to earlier cached lookups.
+File 'C:/Users/HabibatLawal/OneDrive - Health Watch Foundation/Documents/GitHub/health-sentinel/node_modules/typescript/package.json' exists according to earlier cached lookups.
+File 'C:/Users/HabibatLawal/OneDrive - Health Watch Foundation/Documents/GitHub/health-sentinel/node_modules/typescript/lib/package.json' does not exist according to earlier cached lookups.
+File 'C:/Users/HabibatLawal/OneDrive - Health Watch Foundation/Documents/GitHub/health-sentinel/node_modules/typescript/package.json' exists according to earlier cached lookups.
+File 'C:/Users/HabibatLawal/OneDrive - Health Watch Foundation/Documents/GitHub/health-sentinel/node_modules/typescript/lib/package.json' does not exist according to earlier cached lookups.
+File 'C:/Users/HabibatLawal/OneDrive - Health Watch Foundation/Documents/GitHub/health-sentinel/node_modules/typescript/package.json' exists according to earlier cached lookups.
+File 'C:/Users/HabibatLawal/OneDrive - Health Watch Foundation/Documents/GitHub/health-sentinel/node_modules/typescript/lib/package.json' does not exist according to earlier cached lookups.
+File 'C:/Users/HabibatLawal/OneDrive - Health Watch Foundation/Documents/GitHub/health-sentinel/node_modules/typescript/package.json' exists according to earlier cached lookups.
+File 'C:/Users/HabibatLawal/OneDrive - Health Watch Foundation/Documents/GitHub/health-sentinel/node_modules/typescript/lib/package.json' does not exist according to earlier cached lookups.
+File 'C:/Users/HabibatLawal/OneDrive - Health Watch Foundation/Documents/GitHub/health-sentinel/node_modules/typescript/package.json' exists according to earlier cached lookups.
+File 'C:/Users/HabibatLawal/OneDrive - Health Watch Foundation/Documents/GitHub/health-sentinel/node_modules/typescript/lib/package.json' does not exist according to earlier cached lookups.
+File 'C:/Users/HabibatLawal/OneDrive - Health Watch Foundation/Documents/GitHub/health-sentinel/node_modules/typescript/package.json' exists according to earlier cached lookups.
+File 'C:/Users/HabibatLawal/OneDrive - Health Watch Foundation/Documents/GitHub/health-sentinel/node_modules/typescript/lib/package.json' does not exist according to earlier cached lookups.
+File 'C:/Users/HabibatLawal/OneDrive - Health Watch Foundation/Documents/GitHub/health-sentinel/node_modules/typescript/package.json' exists according to earlier cached lookups.
+File 'C:/Users/HabibatLawal/OneDrive - Health Watch Foundation/Documents/GitHub/health-sentinel/node_modules/typescript/lib/package.json' does not exist according to earlier cached lookups.
+File 'C:/Users/HabibatLawal/OneDrive - Health Watch Foundation/Documents/GitHub/health-sentinel/node_modules/typescript/package.json' exists according to earlier cached lookups.
+File 'C:/Users/HabibatLawal/OneDrive - Health Watch Foundation/Documents/GitHub/health-sentinel/node_modules/typescript/lib/package.json' does not exist according to earlier cached lookups.
+File 'C:/Users/HabibatLawal/OneDrive - Health Watch Foundation/Documents/GitHub/health-sentinel/node_modules/typescript/package.json' exists according to earlier cached lookups.
+File 'C:/Users/HabibatLawal/OneDrive - Health Watch Foundation/Documents/GitHub/health-sentinel/node_modules/typescript/lib/package.json' does not exist according to earlier cached lookups.
+File 'C:/Users/HabibatLawal/OneDrive - Health Watch Foundation/Documents/GitHub/health-sentinel/node_modules/typescript/package.json' exists according to earlier cached lookups.
+File 'C:/Users/HabibatLawal/OneDrive - Health Watch Foundation/Documents/GitHub/health-sentinel/node_modules/typescript/lib/package.json' does not exist according to earlier cached lookups.
+File 'C:/Users/HabibatLawal/OneDrive - Health Watch Foundation/Documents/GitHub/health-sentinel/node_modules/typescript/package.json' exists according to earlier cached lookups.
+File 'C:/Users/HabibatLawal/OneDrive - Health Watch Foundation/Documents/GitHub/health-sentinel/node_modules/typescript/lib/package.json' does not exist according to earlier cached lookups.
+File 'C:/Users/HabibatLawal/OneDrive - Health Watch Foundation/Documents/GitHub/health-sentinel/node_modules/typescript/package.json' exists according to earlier cached lookups.
+src/components/dashboard/DashboardGrid.tsx(1,8): error TS1192: Module '"C:/Users/HabibatLawal/OneDrive - Health Watch Foundation/Documents/GitHub/health-sentinel/src/components/dashboard/DashboardCard"' has no default export.
