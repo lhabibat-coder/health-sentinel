@@ -1,43 +1,29 @@
 type Alert = {
-  level: "HIGH" | "MEDIUM" | "LOW";
-  title: string;
+  severity: string;
+  message: string;
   time: string;
 };
 
-const alerts: Alert[] = [
-  {
-    level: "HIGH",
-    title: "Lead detected in imported cosmetics",
-    time: "2 mins ago",
-  },
-  {
-    level: "MEDIUM",
-    title: "Increase in misinformation on Facebook",
-    time: "15 mins ago",
-  },
-  {
-    level: "LOW",
-    title: "NAFDAC advisory published",
-    time: "1 hour ago",
-  },
-];
+type AlertFeedProps = {
+  alerts: Alert[];
+};
 
-export default function AlertFeed() {
+export default function AlertFeed({
+  alerts,
+}: AlertFeedProps) {
   return (
     <div
       style={{
-        background: "var(--card)",
-        borderRadius: "var(--radius)",
-        boxShadow: "var(--shadow)",
+        background: "#1E293B",
         padding: "20px",
-        marginTop: "30px",
+        borderRadius: "12px",
+        marginTop: "25px",
       }}
     >
       <h2
         style={{
-          color: "var(--danger)",
           marginTop: 0,
-          marginBottom: "20px",
+          color: "white",
         }}
       >
         🚨 Live Alert Feed
@@ -47,35 +33,38 @@ export default function AlertFeed() {
         <div
           key={index}
           style={{
-            borderBottom: "1px solid #334155",
-            padding: "15px 0",
+            padding: "12px 0",
+            borderBottom:
+              index !== alerts.length - 1
+                ? "1px solid #334155"
+                : "none",
           }}
         >
           <strong
             style={{
               color:
-                alert.level === "HIGH"
-                  ? "var(--danger)"
-                  : alert.level === "MEDIUM"
-                  ? "var(--warning)"
-                  : "var(--info)",
+                alert.severity === "CRITICAL"
+                  ? "#DC2626"
+                  : alert.severity === "HIGH"
+                  ? "#F59E0B"
+                  : "#10B981",
             }}
           >
-            {alert.level}
+            {alert.severity}
           </strong>
 
-          <p
+          <div
             style={{
-              margin: "8px 0",
-              color: "var(--text)",
+              color: "white",
+              marginTop: "4px",
             }}
           >
-            {alert.title}
-          </p>
+            {alert.message}
+          </div>
 
           <small
             style={{
-              color: "var(--text-secondary)",
+              color: "#94A3B8",
             }}
           >
             {alert.time}

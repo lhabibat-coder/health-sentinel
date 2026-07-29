@@ -1,4 +1,10 @@
-export default function SummaryPanel() {
+type SummaryPanelProps = {
+  threatLevel: string;
+};
+
+export default function SummaryPanel({
+  threatLevel,
+}: SummaryPanelProps) {
   return (
     <div
       style={{
@@ -23,11 +29,10 @@ export default function SummaryPanel() {
           lineHeight: "1.8",
         }}
       >
-        Lead poisoning misinformation is currently classified as
-        <strong style={{ color: "#EF4444" }}> HIGH RISK</strong>.
-        Discussions are increasing across digital platforms, with
-        cosmetics, contaminated spices, and environmental exposure
-        emerging as the dominant narratives.
+        Current Threat Level:{" "}
+        <strong style={{ color: "#EF4444" }}>
+          {threatLevel}
+        </strong>
       </p>
     </div>
   );

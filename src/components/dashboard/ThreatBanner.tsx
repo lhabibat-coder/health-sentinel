@@ -1,4 +1,13 @@
-export default function ThreatBanner() {
+type ThreatBannerProps = {
+  threatLevel: string;
+  setThreatLevel: React.Dispatch<React.SetStateAction<string>>;
+};
+
+export default function ThreatBanner({
+  threatLevel,
+  setThreatLevel,
+}: ThreatBannerProps) {
+    
   return (
     <div
       style={{
@@ -59,7 +68,32 @@ export default function ThreatBanner() {
               marginTop: "8px",
             }}
           >
-            Threat Level: <strong style={{ color: "#EF4444" }}>HIGH</strong>
+            <div>
+  Threat Level:{" "}
+  <strong style={{ color: "#EF4444" }}>
+    {threatLevel}
+  </strong>
+</div>
+
+<div style={{ marginTop: "15px" }}>
+  <button
+    onClick={() =>
+  setThreatLevel(
+    threatLevel === "HIGH" ? "LOW" : "HIGH"
+  )
+}
+    style={{
+      padding: "10px 16px",
+      border: "none",
+      borderRadius: "8px",
+      background: "var(--primary)",
+      color: "white",
+      cursor: "pointer",
+    }}
+  >
+    Simulate Lower Risk
+  </button>
+</div>
           </div>
         </div>
       </div>

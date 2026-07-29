@@ -1,6 +1,17 @@
-import DashboardCard from "./DashboardCard";
 
-export default function DashboardGrid() {
+import DashboardCard from "./DashboardCard";
+type DashboardGridProps = {
+  threatLevel: string;
+  claimsToday: number;
+  activeAlerts: number;
+  narratives: number;
+};
+export default function DashboardGrid({
+  threatLevel,
+  claimsToday,
+  activeAlerts,
+  narratives,
+}: DashboardGridProps) {
   return (
     <div
       style={{
@@ -11,28 +22,37 @@ export default function DashboardGrid() {
       }}
     >
       <DashboardCard
-        title="Overall Risk"
-        value="HIGH"
-        color="#EF4444"
-      />
+  title="⚠ Overall Risk"
+  value={threatLevel}
+  subtitle={
+    threatLevel === "HIGH"
+      ? "Elevated misinformation activity"
+      : "Situation under control"
+  }
+  color={threatLevel === "HIGH" ? "#EF4444" : "#22C55E"}
+/>
 
-      <DashboardCard
-        title="Claims Today"
-        value="187"
-        color="#10B981"
-      />
+     <DashboardCard
+  title="📈 Claims Today"
+  value={claimsToday.toString()}
+  subtitle="+14 compared with yesterday"
+  color="#10B981"
+/>
 
-      <DashboardCard
-        title="Active Alerts"
-        value="12"
-        color="#F59E0B"
-      />
+     <DashboardCard
+  title="🚨 Active Alerts"
+  value={activeAlerts.toString()}
+  subtitle="Requires monitoring"
+  color="#F59E0B"
+/>
 
-      <DashboardCard
-        title="Emerging Narratives"
-        value="8"
-        color="#3B82F6"
-      />
+
+     <DashboardCard
+  title="🧠 Narratives"
+  value={narratives.toString()}
+  subtitle="New misinformation themes"
+  color="#3B82F6"
+/>
     </div>
   );
 }
