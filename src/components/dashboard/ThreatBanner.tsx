@@ -1,12 +1,9 @@
-type ThreatBannerProps = {
-  threatLevel: string;
-  setThreatLevel: React.Dispatch<React.SetStateAction<string>>;
-};
-
-export default function ThreatBanner({
-  threatLevel,
-  setThreatLevel,
-}: ThreatBannerProps) {
+import { useIntelligence } from "../../context/IntelligenceContext";
+export default function ThreatBanner() {
+  const {
+    threatLevel,
+    setThreatLevel,
+  } = useIntelligence();
     
   return (
     <div

@@ -1,16 +1,12 @@
+import { useIntelligence } from "../../context/IntelligenceContext";
 type Alert = {
   severity: string;
   message: string;
   time: string;
 };
 
-type AlertFeedProps = {
-  alerts: Alert[];
-};
-
-export default function AlertFeed({
-  alerts,
-}: AlertFeedProps) {
+export default function AlertFeed() {
+  const { alerts } = useIntelligence();
   return (
     <div
       style={{

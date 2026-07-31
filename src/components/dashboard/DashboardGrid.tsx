@@ -1,17 +1,12 @@
-
+import { useIntelligence } from "../../context/IntelligenceContext";
 import DashboardCard from "./DashboardCard";
-type DashboardGridProps = {
-  threatLevel: string;
-  claimsToday: number;
-  activeAlerts: number;
-  narratives: number;
-};
-export default function DashboardGrid({
-  threatLevel,
-  claimsToday,
-  activeAlerts,
-  narratives,
-}: DashboardGridProps) {
+export default function DashboardGrid() {
+  const {
+    threatLevel,
+    claimsToday,
+    activeAlerts,
+    narratives,
+  } = useIntelligence();
   return (
     <div
       style={{

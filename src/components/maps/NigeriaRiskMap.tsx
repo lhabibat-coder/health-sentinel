@@ -7,19 +7,10 @@ import {
   Popup,
 } from "react-leaflet";
 import { getRiskColor } from "../../utils/riskColors";
+import { useIntelligence } from "../../context/IntelligenceContext";
 
-
-type NigeriaRiskMapProps = {
-  stateRisks: {
-    name: string;
-    position: number[];
-    risk: string;
-    color: string;
-  }[];
-};
-export default function NigeriaRiskMap({
-  stateRisks,
-}: NigeriaRiskMapProps) {
+export default function NigeriaRiskMap() {
+  const { stateRisks } = useIntelligence();
   return (
     <div
       style={{

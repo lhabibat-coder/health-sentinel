@@ -1,10 +1,6 @@
-type SummaryPanelProps = {
-  threatLevel: string;
-};
-
-export default function SummaryPanel({
-  threatLevel,
-}: SummaryPanelProps) {
+import { useIntelligence } from "../../context/IntelligenceContext";
+export default function SummaryPanel() {
+  const { threatLevel } = useIntelligence();
   return (
     <div
       style={{
