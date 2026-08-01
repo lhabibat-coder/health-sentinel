@@ -1,14 +1,28 @@
-import { StrictMode } from "react";
-import { createRoot } from "react-dom/client";
+import React from "react";
+import ReactDOM from "react-dom/client";
+import { BrowserRouter } from "react-router-dom";
+
+import { ThemeProvider, CssBaseline } from "@mui/material";
+
+import App from "./App";
+
+import theme from "./theme/theme";
+
 import "./index.css";
 import "./styles/global.css";
-import App from "./App";
+
 import { IntelligenceProvider } from "./context/IntelligenceContext";
 
-createRoot(document.getElementById("root")!).render(
-  <StrictMode>
-    <IntelligenceProvider>
-      <App />
-    </IntelligenceProvider>
-  </StrictMode>
+ReactDOM.createRoot(document.getElementById("root")!).render(
+  <React.StrictMode>
+    <ThemeProvider theme={theme}>
+      <CssBaseline />
+
+      <BrowserRouter>
+        <IntelligenceProvider>
+          <App />
+        </IntelligenceProvider>
+      </BrowserRouter>
+    </ThemeProvider>
+  </React.StrictMode>
 );

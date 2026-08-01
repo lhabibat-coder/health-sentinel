@@ -1,4 +1,14 @@
-export const stateRiskData = [
+export type StateRisk = {
+  name: string;
+  position: [number, number];
+  risk: string;
+  claims: number;
+  alerts: number;
+  narratives: number;
+  updated: string;
+};
+
+export const stateRiskData: StateRisk[] = [
   {
     name: "Kano",
     position: [12.0022, 8.592],

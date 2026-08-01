@@ -1,136 +1,165 @@
-import {
-  createContext,
-  useContext,
-  useState,
-  ReactNode,
-} from "react";
+import { createContext, useContext, useState } from "react";
+import type { ReactNode } from "react";
 
+import { intelligenceFeed } from "../data/intelligenceData";
+import type { IntelligenceItem } from "../data/intelligenceData";
 import { dashboardData } from "../data/dashboardData";
-import { alertData } from "../data/alertData";
+import { analyticsData } from "../data/analyticsData";
 import { stateRiskData } from "../data/stateRiskData";
+import type { StateRisk } from "../data/stateRiskData";
 
-type IntelligenceContextType = {simulateNewIntelligence: () => void;showToast: boolean;
-setShowToast: React.Dispatch<React.SetStateAction<boolean>>;
+type IntelligenceContextType = {
+  alerts: IntelligenceItem[];
+
+  // Dashboard summary values
   threatLevel: string;
   claimsToday: number;
   activeAlerts: number;
-  narratives: number;
-  alerts: typeof alertData;
-  stateRisks: typeof stateRiskData;
+  narratives: number; // count
+  narrativesList: string[];
 
-  setThreatLevel: React.Dispatch<React.SetStateAction<string>>;
-  setClaimsToday: React.Dispatch<React.SetStateAction<number>>;
-  setActiveAlerts: React.Dispatch<React.SetStateAction<number>>;
-  setNarratives: React.Dispatch<React.SetStateAction<number>>;
-  setAlerts: React.Dispatch<React.SetStateAction<typeof alertData>>;
-  setStateRisks: React.Dispatch<
-    React.SetStateAction<typeof stateRiskData>
-  >;
+  search: string;
+  setSearch: (value: string) => void;
+
+  severity: string;
+  setSeverity: (value: string) => void;
+
+  stateFilter: string;
+  setStateFilter: (value: string) => void;
+
+  topic: string;
+  setTopic: (value: string) => void;
+
+  filteredAlerts: IntelligenceItem[];
+
+  // State risks for map
+  stateRisks: StateRisk[];
+
+  // UI helpers
+  showToast: boolean;
+
+  toggleBookmark: (id: number) => void;
+
+  togglePin: (id: number) => void;
+
+  markAsRead: (id: number) => void;
+
+  simulateNewIntelligence: () => void;
 };
 
-const IntelligenceContext =
-  createContext<IntelligenceContextType | null>(null);
+const IntelligenceContext = createContext<IntelligenceContextType>(
+  {} as IntelligenceContextType
+);
 
-export function IntelligenceProvider({
-  children,
-}: {
-  children: ReactNode;
-}) {
-  const [threatLevel, setThreatLevel] = useState(
-    dashboardData.threatLevel
-  );
+export function IntelligenceProvider({ children }: { children: ReactNode }) {
+  const [alerts, setAlerts] = useState<IntelligenceItem[]>(intelligenceFeed);
 
-  const [claimsToday, setClaimsToday] = useState(
-    dashboardData.claimsToday
-  );
+  const [search, setSearch] = useState("");
+  const [severity, setSeverity] = useState("");
+  const [stateFilter, setStateFilter] = useState("");
+  const [topic, setTopic] = useState("");
+  const [showToast, setShowToast] = useState(false);
 
-  const [activeAlerts, setActiveAlerts] = useState(
-    dashboardData.activeAlerts
-  );
+  function toggleBookmark(id: number) {
+    setAlerts((previous) =>
+      previous.map((alert) =>
+        alert.id === id ? { ...alert, bookmarked: !alert.bookmarked } : alert
+      )
+    );
+  }
 
-  const [narratives, setNarratives] = useState(
-    dashboardData.narratives
-  );
+  function togglePin(id: number) {
+    setAlerts((previous) =>
+      previous.map((alert) =>
+        alert.id === id ? { ...alert, pinned: !alert.pinned } : alert
+      )
+    );
+  }
 
-  const [alerts, setAlerts] = useState(alertData);
+  function markAsRead(id: number) {
+    setAlerts((previous) =>
+      previous.map((alert) => (alert.id === id ? { ...alert, read: true } : alert))
+    );
+  }
 
-  const [stateRisks, setStateRisks] =
-    useState(stateRiskData);
-    const [showToast, setShowToast] = useState(false);
-function simulateNewIntelligence() {
-  setShowToast(true);
+  function simulateNewIntelligence() {
+    const nextId = alerts.length ? Math.max(...alerts.map((a) => a.id)) + 1 : 1;
 
-  setTimeout(() => {
-    setShowToast(false);
-  }, 3000);
-
-  const levels = ["LOW", "MEDIUM", "HIGH"];
-  const risks = ["LOW", "MEDIUM", "HIGH"];
-
-  setThreatLevel(
-    levels[Math.floor(Math.random() * levels.length)]
-  );
-
-  setClaimsToday(Math.floor(Math.random() * 80) + 180);
-
-  setActiveAlerts(Math.floor(Math.random() * 8) + 15);
-
-  setNarratives(Math.floor(Math.random() * 6) + 8);
-
-  setAlerts([
-    {
-      severity: "CRITICAL",
-      message:
-        "Counterfeit skin-lightening cream spreading in Kano markets",
-      time: "Just now",
-    },
-    {
-      severity: "HIGH",
-      message: "Lead detected in imported cosmetics",
-      time: "1 min ago",
-    },
-    {
-      severity: "HIGH",
-      message:
-        "Unsafe turmeric products identified in informal markets",
-      time: "2 mins ago",
-    },
-    {
+    const newAlert: IntelligenceItem = {
+      id: nextId,
       severity: "MEDIUM",
-      message:
-        "Misinformation linking aluminium pots to lead poisoning is trending",
-      time: "5 mins ago",
-    },
-  ]);
+      state: "Lagos",
+      topic: "Surveillance",
+      title: "Automated intelligence injection",
+      source: "Simulator",
+      time: "Just now",
+      read: false,
+      pinned: false,
+      bookmarked: false,
+    };
 
-  setStateRisks(
-    stateRisks.map((state) => ({
-      ...state,
-      risk: risks[Math.floor(Math.random() * risks.length)],
-      claims: Math.floor(Math.random() * 50) + 10,
-      alerts: Math.floor(Math.random() * 6) + 1,
-      narratives: Math.floor(Math.random() * 5) + 1,
-      updated: "Just now",
-    }))
-  );
-}
+    setAlerts((prev) => [newAlert, ...prev]);
+    setShowToast(true);
+    setTimeout(() => setShowToast(false), 4000);
+  }
+
+  const filteredAlerts = alerts.filter((alert) => {
+    const searchMatch =
+      alert.title.toLowerCase().includes(search.toLowerCase()) ||
+      alert.state.toLowerCase().includes(search.toLowerCase()) ||
+      alert.topic.toLowerCase().includes(search.toLowerCase()) ||
+      alert.source.toLowerCase().includes(search.toLowerCase());
+
+    const severityMatch = severity === "" || alert.severity === severity;
+    const stateMatch = stateFilter === "" || alert.state === stateFilter;
+    const topicMatch = topic === "" || alert.topic === topic;
+
+    return searchMatch && severityMatch && stateMatch && topicMatch;
+  });
+
+  // derive dashboard/analytics values
+  const threatLevel = dashboardData.threatLevel;
+  const claimsToday = dashboardData.claimsToday;
+  const activeAlerts = dashboardData.activeAlerts;
+  const narrativesList = analyticsData.narratives || [];
+  const narratives = Array.isArray(narrativesList) ? narrativesList.length : 0;
+
+  const stateRisks: StateRisk[] = stateRiskData;
+
   return (
     <IntelligenceContext.Provider
-      value={{simulateNewIntelligence,showToast,
-setShowToast,
+      value={{
+        alerts,
+
         threatLevel,
         claimsToday,
         activeAlerts,
         narratives,
-        alerts,
+        narrativesList,
+
+        search,
+        setSearch,
+
+        severity,
+        setSeverity,
+
+        stateFilter,
+        setStateFilter,
+
+        topic,
+        setTopic,
+
+        filteredAlerts,
+
         stateRisks,
 
-        setThreatLevel,
-        setClaimsToday,
-        setActiveAlerts,
-        setNarratives,
-        setAlerts,
-        setStateRisks,
+        showToast,
+
+        toggleBookmark,
+        togglePin,
+        markAsRead,
+
+        simulateNewIntelligence,
       }}
     >
       {children}
@@ -139,13 +168,5 @@ setShowToast,
 }
 
 export function useIntelligence() {
-  const context = useContext(IntelligenceContext);
-
-  if (!context) {
-    throw new Error(
-      "useIntelligence must be used inside IntelligenceProvider"
-    );
-  }
-
-  return context;
+  return useContext(IntelligenceContext);
 }

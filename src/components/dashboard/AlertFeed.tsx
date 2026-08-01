@@ -1,72 +1,97 @@
+import {
+  Card,
+  CardContent,
+  Typography,
+  Stack,
+  Chip,
+  Divider,
+} from "@mui/material";
+
 import { useIntelligence } from "../../context/IntelligenceContext";
-type Alert = {
-  severity: string;
-  message: string;
-  time: string;
-};
 
 export default function AlertFeed() {
   const { alerts } = useIntelligence();
+
+  const recentAlerts = alerts.slice(0, 5);
+
   return (
-    <div
-      style={{
-        background: "#1E293B",
-        padding: "20px",
-        borderRadius: "12px",
-        marginTop: "25px",
+    <Card
+      sx={{
+        mb: 4,
+        bgcolor: "#1E293B",
+        borderRadius: 4,
       }}
     >
-      <h2
-        style={{
-          marginTop: 0,
-          color: "white",
-        }}
-      >
-        🚨 Live Alert Feed
-      </h2>
-
-      {alerts.map((alert, index) => (
-        <div
-          key={index}
-          style={{
-            padding: "12px 0",
-            borderBottom:
-              index !== alerts.length - 1
-                ? "1px solid #334155"
-                : "none",
-          }}
+      <CardContent>
+        <Stack
+          direction="row"
+          sx={{ justifyContent: "space-between", alignItems: "center", mb: 3 }}
         >
-          <strong
-            style={{
-              color:
-                alert.severity === "CRITICAL"
-                  ? "#DC2626"
-                  : alert.severity === "HIGH"
-                  ? "#F59E0B"
-                  : "#10B981",
-            }}
+          <Typography
+            variant="h5"
+            sx={{ fontWeight: 700 }}
           >
-            {alert.severity}
-          </strong>
+            🚨 Live Intelligence Feed
+          </Typography>
 
-          <div
-            style={{
-              color: "white",
-              marginTop: "4px",
-            }}
-          >
-            {alert.message}
+          <Chip
+            label="LIVE"
+            color="success"
+          />
+        </Stack>
+
+        {recentAlerts.map((alert, index) => (
+          <div key={alert.id}>
+            <Stack
+              direction="row"
+              spacing={2}
+              sx={{ justifyContent: "space-between", alignItems: "center" }}
+            >
+              <div>
+                <Typography sx={{ fontWeight: 700 }}>
+                  {alert.title}
+                </Typography>
+
+                <Typography
+                  variant="body2"
+                  color="text.secondary"
+                >
+                  {alert.state} • {alert.source}
+                </Typography>
+              </div>
+
+              <Stack
+                direction="row"
+                spacing={1}
+                sx={{ alignItems: "center" }}
+              >
+                <Chip
+                  size="small"
+                  color={
+                    alert.severity === "HIGH"
+                      ? "error"
+                      : alert.severity === "MEDIUM"
+                      ? "warning"
+                      : "success"
+                  }
+                  label={alert.severity}
+                />
+
+                <Typography
+                  variant="caption"
+                  color="text.secondary"
+                >
+                  {alert.time}
+                </Typography>
+              </Stack>
+            </Stack>
+
+            {index !== recentAlerts.length - 1 && (
+              <Divider sx={{ my: 2 }} />
+            )}
           </div>
-
-          <small
-            style={{
-              color: "#94A3B8",
-            }}
-          >
-            {alert.time}
-          </small>
-        </div>
-      ))}
-    </div>
+        ))}
+      </CardContent>
+    </Card>
   );
 }
