@@ -1,13 +1,27 @@
-import type { ReactNode } from "react";
 import { Box } from "@mui/material";
+import type { ReactNode } from "react";
 
-type PageContainerProps = {
+interface PageContainerProps {
   children: ReactNode;
-};
+}
 
-export default function PageContainer({ children }: PageContainerProps) {
+export default function PageContainer({
+  children,
+}: PageContainerProps) {
   return (
-    <Box sx={{ pb: 4, maxWidth: 1600, mx: "auto" }}>
+    <Box
+      sx={{
+        width: "100%",
+        maxWidth: "1500px",
+        mx: "auto",
+        px: {
+          xs: 2,
+          sm: 3,
+          md: 4,
+        },
+        py: 4,
+      }}
+    >
       {children}
     </Box>
   );

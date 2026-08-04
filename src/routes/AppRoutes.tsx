@@ -1,37 +1,76 @@
-import { Suspense, lazy } from "react";
-import { Routes, Route } from "react-router-dom";
-import { Box, CircularProgress } from "@mui/material";
+import { Routes, Route, Navigate } from "react-router-dom";
 
-import AppLayout from "../components/layout/AppLayout";
-
-const Dashboard = lazy(() => import("../pages/Dashboard"));
-const Analytics = lazy(() => import("../pages/Analytics"));
-const Intelligence = lazy(() => import("../pages/Intelligence"));
-const Reports = lazy(() => import("../pages/Reports"));
-const Settings = lazy(() => import("../pages/Settings"));
-const NotFound = lazy(() => import("../pages/NotFound"));
-
-function RouteFallback() {
-  return (
-    <Box sx={{ display: "flex", justifyContent: "center", py: 8 }}>
-      <CircularProgress />
-    </Box>
-  );
-}
+import Dashboard from "../pages/Dashboard";
+import AISituationRoom from "../pages/AISituationRoom";
+import SituationRoom from "../pages/SituationRoom";
+import Intelligence from "../pages/Intelligence";
+import Reports from "../pages/Reports";
+import Analytics from "../pages/Analytics";
+import Settings from "../pages/Settings";
+import NotFound from "../pages/NotFound";
 
 export default function AppRoutes() {
   return (
-    <Suspense fallback={<RouteFallback />}>
-      <Routes>
-        <Route element={<AppLayout />}>
-          <Route index element={<Dashboard />} />
-          <Route path="analytics" element={<Analytics />} />
-          <Route path="intelligence" element={<Intelligence />} />
-          <Route path="reports" element={<Reports />} />
-          <Route path="settings" element={<Settings />} />
-          <Route path="*" element={<NotFound />} />
-        </Route>
-      </Routes>
-    </Suspense>
+    <Routes>
+      {/* Home */}
+      <Route
+        path="/"
+        element={<AISituationRoom />}
+      />
+
+      {/* AI Situation Room */}
+      <Route
+        path="/ai-situation-room"
+        element={<AISituationRoom />}
+      />
+
+      {/* Classic Situation Room */}
+      <Route
+        path="/situation-room"
+        element={<SituationRoom />}
+      />
+
+      {/* Executive Dashboard */}
+      <Route
+        path="/dashboard"
+        element={<Dashboard />}
+      />
+
+      {/* Intelligence */}
+      <Route
+        path="/intelligence"
+        element={<Intelligence />}
+      />
+
+      {/* Reports */}
+      <Route
+        path="/reports"
+        element={<Reports />}
+      />
+
+      {/* Analytics */}
+      <Route
+        path="/analytics"
+        element={<Analytics />}
+      />
+
+      {/* Settings */}
+      <Route
+        path="/settings"
+        element={<Settings />}
+      />
+
+      {/* 404 */}
+      <Route
+        path="/404"
+        element={<NotFound />}
+      />
+
+      {/* Catch All */}
+      <Route
+        path="*"
+        element={<Navigate to="/404" replace />}
+      />
+    </Routes>
   );
 }

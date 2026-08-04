@@ -1,22 +1,27 @@
-import { createContext, useContext, useState } from "react";
-import type { ReactNode } from "react";
+import {
+  createContext,
+  useContext,
+  useMemo,
+  useState,
+  type ReactNode,
+} from "react";
 
-import { intelligenceFeed } from "../data/intelligenceData";
-import type { IntelligenceItem } from "../data/intelligenceData";
+import {
+  intelligenceFeed,
+  type IntelligenceItem,
+} from "../data/intelligenceData";
+
 import { dashboardData } from "../data/dashboardData";
 import { analyticsData } from "../data/analyticsData";
-import { stateRiskData } from "../data/stateRiskData";
-import type { StateRisk } from "../data/stateRiskData";
+import {
+  stateRiskData,
+  type StateRisk,
+} from "../data/stateRiskData";
 
 type IntelligenceContextType = {
   alerts: IntelligenceItem[];
 
-  // Dashboard summary values
-  threatLevel: string;
-  claimsToday: number;
-  activeAlerts: number;
-  narratives: number; // count
-  narrativesList: string[];
+  filteredAlerts: IntelligenceItem[];
 
   search: string;
   setSearch: (value: string) => void;
@@ -30,40 +35,60 @@ type IntelligenceContextType = {
   topic: string;
   setTopic: (value: string) => void;
 
-  filteredAlerts: IntelligenceItem[];
+  threatLevel: string;
+  claimsToday: number;
+  activeAlerts: number;
 
-  // State risks for map
+  narratives: number;
+  narrativesList: string[];
+
   stateRisks: StateRisk[];
 
-  // UI helpers
   showToast: boolean;
 
   toggleBookmark: (id: number) => void;
-
   togglePin: (id: number) => void;
-
   markAsRead: (id: number) => void;
 
   simulateNewIntelligence: () => void;
 };
 
-const IntelligenceContext = createContext<IntelligenceContextType>(
-  {} as IntelligenceContextType
-);
+const IntelligenceContext =
+  createContext<IntelligenceContextType>(
+    {} as IntelligenceContextType
+  );
 
-export function IntelligenceProvider({ children }: { children: ReactNode }) {
-  const [alerts, setAlerts] = useState<IntelligenceItem[]>(intelligenceFeed);
+export function IntelligenceProvider({
+  children,
+}: {
+  children: ReactNode;
+}) {
+  const [alerts, setAlerts] =
+    useState<IntelligenceItem[]>(intelligenceFeed);
 
   const [search, setSearch] = useState("");
-  const [severity, setSeverity] = useState("");
-  const [stateFilter, setStateFilter] = useState("");
-  const [topic, setTopic] = useState("");
-  const [showToast, setShowToast] = useState(false);
+
+  const [severity, setSeverity] =
+    useState("");
+
+  const [stateFilter, setStateFilter] =
+    useState("");
+
+  const [topic, setTopic] =
+    useState("");
+
+  const [showToast, setShowToast] =
+    useState(false);
 
   function toggleBookmark(id: number) {
     setAlerts((previous) =>
       previous.map((alert) =>
-        alert.id === id ? { ...alert, bookmarked: !alert.bookmarked } : alert
+        alert.id === id
+          ? {
+              ...alert,
+              bookmarked: !alert.bookmarked,
+            }
+          : alert
       )
     );
   }
@@ -71,71 +96,139 @@ export function IntelligenceProvider({ children }: { children: ReactNode }) {
   function togglePin(id: number) {
     setAlerts((previous) =>
       previous.map((alert) =>
-        alert.id === id ? { ...alert, pinned: !alert.pinned } : alert
+        alert.id === id
+          ? {
+              ...alert,
+              pinned: !alert.pinned,
+            }
+          : alert
       )
     );
   }
 
   function markAsRead(id: number) {
     setAlerts((previous) =>
-      previous.map((alert) => (alert.id === id ? { ...alert, read: true } : alert))
+      previous.map((alert) =>
+        alert.id === id
+          ? {
+              ...alert,
+              read: true,
+            }
+          : alert
+      )
     );
   }
 
   function simulateNewIntelligence() {
-    const nextId = alerts.length ? Math.max(...alerts.map((a) => a.id)) + 1 : 1;
+    const nextId =
+      alerts.length > 0
+        ? Math.max(...alerts.map((a) => a.id)) + 1
+        : 1;
 
     const newAlert: IntelligenceItem = {
       id: nextId,
+
+      programme: "lead",
+
       severity: "MEDIUM",
+
       state: "Lagos",
+
       topic: "Surveillance",
-      title: "Automated intelligence injection",
-      source: "Simulator",
+
+      title:
+        "Automated intelligence injection",
+
+      source: "Health Sentinel AI",
+
       time: "Just now",
+
       read: false,
+
       pinned: false,
+
       bookmarked: false,
     };
 
-    setAlerts((prev) => [newAlert, ...prev]);
+    setAlerts((previous) => [
+      newAlert,
+      ...previous,
+    ]);
+
     setShowToast(true);
-    setTimeout(() => setShowToast(false), 4000);
+
+    setTimeout(() => {
+      setShowToast(false);
+    }, 4000);
   }
 
-  const filteredAlerts = alerts.filter((alert) => {
-    const searchMatch =
-      alert.title.toLowerCase().includes(search.toLowerCase()) ||
-      alert.state.toLowerCase().includes(search.toLowerCase()) ||
-      alert.topic.toLowerCase().includes(search.toLowerCase()) ||
-      alert.source.toLowerCase().includes(search.toLowerCase());
+  const filteredAlerts = useMemo(() => {
+    return alerts.filter((alert) => {
+      const searchMatch =
+        alert.title
+          .toLowerCase()
+          .includes(search.toLowerCase()) ||
+        alert.state
+          .toLowerCase()
+          .includes(search.toLowerCase()) ||
+        alert.topic
+          .toLowerCase()
+          .includes(search.toLowerCase()) ||
+        alert.source
+          .toLowerCase()
+          .includes(search.toLowerCase());
 
-    const severityMatch = severity === "" || alert.severity === severity;
-    const stateMatch = stateFilter === "" || alert.state === stateFilter;
-    const topicMatch = topic === "" || alert.topic === topic;
+      const severityMatch =
+        severity === "" ||
+        alert.severity === severity;
 
-    return searchMatch && severityMatch && stateMatch && topicMatch;
-  });
+      const stateMatch =
+        stateFilter === "" ||
+        alert.state === stateFilter;
 
-  // derive dashboard/analytics values
-  const threatLevel = dashboardData.threatLevel;
-  const claimsToday = dashboardData.claimsToday;
-  const activeAlerts = dashboardData.activeAlerts;
-  const narrativesList = analyticsData.narratives || [];
-  const narratives = Array.isArray(narrativesList) ? narrativesList.length : 0;
+      const topicMatch =
+        topic === "" ||
+        alert.topic === topic;
 
-  const stateRisks: StateRisk[] = stateRiskData;
+      return (
+        searchMatch &&
+        severityMatch &&
+        stateMatch &&
+        topicMatch
+      );
+    });
+  }, [
+    alerts,
+    search,
+    severity,
+    stateFilter,
+    topic,
+  ]);
+
+  const threatLevel =
+    dashboardData.threatLevel;
+
+  const claimsToday =
+    dashboardData.claimsToday;
+
+  const activeAlerts =
+    dashboardData.activeAlerts;
+
+  const narrativesList =
+    analyticsData.narratives;
+
+  const narratives =
+    narrativesList.length;
+
+  const stateRisks =
+    stateRiskData;
 
   return (
     <IntelligenceContext.Provider
       value={{
         alerts,
 
-        threatLevel,
-        claimsToday,
-        activeAlerts,
-        narratives,
-        narrativesList,
+        filteredAlerts,
 
         search,
         setSearch,
@@ -149,14 +242,24 @@ export function IntelligenceProvider({ children }: { children: ReactNode }) {
         topic,
         setTopic,
 
-        filteredAlerts,
+        threatLevel,
+
+        claimsToday,
+
+        activeAlerts,
+
+        narratives,
+
+        narrativesList,
 
         stateRisks,
 
         showToast,
 
         toggleBookmark,
+
         togglePin,
+
         markAsRead,
 
         simulateNewIntelligence,
@@ -168,5 +271,7 @@ export function IntelligenceProvider({ children }: { children: ReactNode }) {
 }
 
 export function useIntelligence() {
-  return useContext(IntelligenceContext);
+  return useContext(
+    IntelligenceContext
+  );
 }

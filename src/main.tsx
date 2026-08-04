@@ -12,6 +12,7 @@ import "./index.css";
 import "./styles/global.css";
 
 import { IntelligenceProvider } from "./context/IntelligenceContext";
+import { ProgrammeProvider } from "./context/ProgrammeContext";
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
@@ -19,9 +20,11 @@ ReactDOM.createRoot(document.getElementById("root")!).render(
       <CssBaseline />
 
       <BrowserRouter>
-        <IntelligenceProvider>
-          <App />
-        </IntelligenceProvider>
+        <ProgrammeProvider>
+  <IntelligenceProvider>
+    <App />
+  </IntelligenceProvider>
+</ProgrammeProvider>
       </BrowserRouter>
     </ThemeProvider>
   </React.StrictMode>
